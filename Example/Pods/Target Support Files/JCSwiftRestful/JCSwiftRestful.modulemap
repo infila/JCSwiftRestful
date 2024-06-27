@@ -1,0 +1,6 @@
+framework module JCSwiftRestful {
+  umbrella header "JCSwiftRestful-umbrella.h"
+
+  export *
+  module * { export * }
+}

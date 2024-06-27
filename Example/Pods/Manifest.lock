@@ -1,0 +1,28 @@
+PODS:
+  - JCSwiftCommon (1.0.0):
+    - JCSwiftCommon/Common (= 1.0.0)
+    - "JCSwiftCommon/Foundation+Ext (= 1.0.0)"
+    - "JCSwiftCommon/SwiftUI+Ext (= 1.0.0)"
+  - JCSwiftCommon/Common (1.0.0)
+  - "JCSwiftCommon/Foundation+Ext (1.0.0)"
+  - "JCSwiftCommon/SwiftUI+Ext (1.0.0)"
+  - JCSwiftRestful (0.1.0):
+    - JCSwiftCommon
+
+DEPENDENCIES:
+  - JCSwiftCommon (from `../../JCSwiftCommon`)
+  - JCSwiftRestful (from `../`)
+
+EXTERNAL SOURCES:
+  JCSwiftCommon:
+    :path: "../../JCSwiftCommon"
+  JCSwiftRestful:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JCSwiftCommon: 9c35348e56e35bca983ec036ef74ab5378428ca3
+  JCSwiftRestful: 0c0f8285555cffacf464bc28b2de230c16790195
+
+PODFILE CHECKSUM: f0667021d57f43aa040a42773d3d85c5fe344a03
+
+COCOAPODS: 1.15.2
