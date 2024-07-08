@@ -23,29 +23,31 @@ public protocol JCRequestData {
   var parameter: Codable? { get }
 }
 
-extension JCRequestData {
-  var id: String {
-    return UUID().uuidString
-  }
+// JCRequestData default implementation Example
 
-  var method: JCHttpMethod {
-    return .get
-  }
-
-  var parameter: Codable? {
-    return nil
-  }
-
-  var header: [String: String] {
-    var header = [String: String]()
-    header["Accept"] = "application/json, text/plain, */*"
-    header["Accept-Language"] = "en-US,en;q=0.9"
-    header["Content-Type"] = "application/json"
-    header["client-version"] = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-    header["source"] = "ios"
+//extension JCRequestData {
+//  var id: String {
+//    return UUID().uuidString
+//  }
+//
+//  var method: JCHttpMethod {
+//    return .get
+//  }
+//
+//  var parameter: Codable? {
+//    return nil
+//  }
+//
+//  var header: [String: String] {
+//    var header = [String: String]()
+//    header["Accept"] = "application/json, text/plain, */*"
+//    header["Accept-Language"] = "en-US,en;q=0.9"
+//    header["Content-Type"] = "application/json"
+//    header["client-version"] = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+//    header["source"] = "ios"
 //    if let token = UserManager.shared.userToken, token.count != 0 {
-    header["Authorization"] = "userToken"
+//      header["Authorization"] = "userToken"
 //    }
-    return header
-  }
-}
+//    return header
+//  }
+//}

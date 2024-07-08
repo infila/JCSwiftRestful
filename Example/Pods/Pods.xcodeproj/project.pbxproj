@@ -32,6 +32,7 @@
 		DD7C1F0296546375B9AAA6EB0C673917 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83001E52E85DA92A081646B8BD08A1CA /* Double+Ext.swift */; };
 		E451CFA204A3FC2C81D4C098DB048136 /* JCSwiftCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC57C3774420A33F079235013C90B865 /* JCSwiftCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5B3F8C08983BEBC40C14BCB08E17108 /* JCRequestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47681DE89A13980A75CC5C2E11E95D22 /* JCRequestUtility.swift */; };
+		F2090FE62C38AAB9000375F4 /* JCLocalPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090FE52C38AAB9000375F4 /* JCLocalPersistent.swift */; };
 		FA86DBA18A6C4E6E7EB46EE033A3E7E9 /* JCSwiftCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB263C67061E8A5551C59B0A03744CD /* JCSwiftCommon-dummy.m */; };
 		FE79FF5DBB97E5F6F390739DEE557EB4 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7A0BDED7FB833149FA05E4A3D1414 /* Image+Ext.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		E3109BC5805CE68D5157160B5BEDB345 /* Array+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		EC484D14A4775E6F916CF59E40CB3CA4 /* JCSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JCSerialization.swift; sourceTree = "<group>"; };
 		EDE37707C65B2AA74B759C88DE938415 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F2090FE52C38AAB9000375F4 /* JCLocalPersistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLocalPersistent.swift; sourceTree = "<group>"; };
 		F5AAE7D78EBC8686BD1A59044EFCA915 /* Pods-JCSwiftRestful_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCSwiftRestful_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F61B5391D80DE03FCDC2D1D0C86C0EE6 /* Pods-JCSwiftRestful_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCSwiftRestful_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 			children = (
 				792A4D0883EC6931D4D8287FFFBA4925 /* JCBundleFileLoader.swift */,
 				EC484D14A4775E6F916CF59E40CB3CA4 /* JCSerialization.swift */,
+				F2090FE52C38AAB9000375F4 /* JCLocalPersistent.swift */,
 			);
 			name = Common;
 			path = JCSwiftCommon/Classes/Common;
@@ -559,6 +562,7 @@
 			files = (
 				88F1166F0F5D3A0F345C609B57EDC310 /* Array+Ext.swift in Sources */,
 				4ED736682446882FAAB44DCE8EE6CF9F /* Color+Ext.swift in Sources */,
+				F2090FE62C38AAB9000375F4 /* JCLocalPersistent.swift in Sources */,
 				9F19672925321DD51A921671D003224B /* Date+Ext.swift in Sources */,
 				DD7C1F0296546375B9AAA6EB0C673917 /* Double+Ext.swift in Sources */,
 				FE79FF5DBB97E5F6F390739DEE557EB4 /* Image+Ext.swift in Sources */,

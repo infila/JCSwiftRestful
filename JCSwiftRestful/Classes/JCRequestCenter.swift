@@ -12,10 +12,6 @@ public final class JCRequestCenter {
   public typealias ResponseOnSuccess = (_ requestData: JCRequestData, _ response: Data) -> Void
   public typealias ResponseOnApiError = (_ requestData: JCRequestData, _ apiError: JCRequestError) -> Void
   public typealias ResponseOnNetworkError = (_ requestData: JCRequestData, _ error: Error) -> Void
-  public typealias RequestPackage = (requestData: JCRequestData,
-                                     onSuccess: ResponseOnSuccess,
-                                     onApiError: ResponseOnApiError,
-                                     onNetworkError: ResponseOnNetworkError)
 
   public static let shared = JCRequestCenter()
   public var timeoutInterval: TimeInterval = 15
@@ -24,9 +20,18 @@ public final class JCRequestCenter {
   public var consoleLogEnable = true
   public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
 
+  public var encryptClosure: ((Data) -> (Data))?
+  public var decryptClosure: ((Data) -> (Data))?
+
   public func sendRequest<T>(_ request: JCRequestData, completion: @escaping (Result<T, JCRequestError>) -> Void) where T: Codable {
     JCRequestCenter.shared.sendRequest(request) { _, response in
-      if let model = JCSerialization.decode(from: response, decodeType: T.self) {
+      var responseData: Data
+      if let decryptClosure = self.decryptClosure {
+        responseData = decryptClosure(response)
+      } else {
+        responseData = response
+      }
+      if let model = JCSerialization.decode(from: responseData, decodeType: T.self) {
         completion(.success(model))
       } else {
         completion(.failure(JCRequestError.RESULT_JSON_ERROR))
@@ -58,9 +63,12 @@ public final class JCRequestCenter {
     var body: Data?
     if request.method == .get {
       let parameters = JCRequestUtility.object2UrlParameters(request.parameter)
-      let urlPath = urlWithParameters(urlString, parameter: parameters)
+      urlPath = urlWithParameters(urlString, parameter: parameters)
     } else {
       body = JCRequestUtility.object2Data(request.parameter)
+      if body != nil, let encryptClosure = encryptClosure {
+        body = encryptClosure(body!)
+      }
     }
     httpRequest(urlPath: urlPath, header: header, body: body, method: request.method) { response, data, error in
       if self.consoleLogEnable {
@@ -78,20 +86,9 @@ public final class JCRequestCenter {
     }
   }
 
-  public func downloadFile(fileUrl: String, completion: @escaping (_ fileUrl: String, _ fileData: Data?) -> Void) {
-    httpRequest(urlPath: fileUrl, header: nil, body: nil, method: .get) { request, data, error in
-      var result: Data?
-      if error == nil, request?.statusCode == 200 {
-        result = data
-      }
-      completion(fileUrl, result)
-    }
-  }
-
   private init() {}
 
   private let operationQueue = OperationQueue()
-  private var requestPackage401 = [RequestPackage]()
 }
 
 private extension JCRequestCenter {
@@ -159,9 +156,6 @@ private extension JCRequestCenter {
       } else {
         onSuccess(request, responseBody)
       }
-    } else if response.statusCode == 401 {
-      requestPackage401.append((request, onSuccess, onApiError, onNetworkError))
-      reauthenticate()
     } else {
       if let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) {
         if invokeClosureOnMainThread {
@@ -180,21 +174,6 @@ private extension JCRequestCenter {
           onApiError(request, JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8)))
         }
       }
-    }
-  }
-
-  func reauthenticate() {
-  }
-
-  func resendRequest401() {
-    while !requestPackage401.isEmpty {
-      if let requestPackage = requestPackage401.first {
-        sendRequest(requestPackage.requestData,
-                    onSuccess: requestPackage.onSuccess,
-                    onApiError: requestPackage.onApiError,
-                    onNetworkError: requestPackage.onNetworkError)
-      }
-      requestPackage401.removeFirst()
     }
   }
 

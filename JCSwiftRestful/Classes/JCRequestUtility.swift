@@ -8,7 +8,7 @@
 import Foundation
 import JCSwiftCommon
 
-final class JCRequestUtility {
+public struct JCRequestUtility {
   public static func object2Data(_ obj: Codable?) -> Data? {
     guard let obj = obj else {
       return nil
@@ -20,7 +20,7 @@ final class JCRequestUtility {
     guard let obj = obj else {
       return nil
     }
-    let dic = JCSerialization.convertObject(obj)
+    let dic = JCSerialization.objectToDict(obj)
     return parameterInDic(dic)
   }
 }
