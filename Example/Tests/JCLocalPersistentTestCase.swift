@@ -9,23 +9,6 @@
 import JCSwiftCommon
 import XCTest
 
-class Person: JCPersistentObject {
-  var id: String {
-    return name
-  }
-
-  var name: String
-  var age: Int
-
-  var children: [Person]?
-
-  init(name: String, age: Int, children: [Person]? = nil) {
-    self.name = name
-    self.age = age
-    self.children = children
-  }
-}
-
 class JCLocalPersistentTestCase: XCTestCase {
   func testExample() {
     Person.clear()
