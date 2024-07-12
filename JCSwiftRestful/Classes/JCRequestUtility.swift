@@ -8,15 +8,16 @@
 import Foundation
 import JCSwiftCommon
 
-public struct JCRequestUtility {
-  public static func object2Data(_ obj: Codable?) -> Data? {
+/// Utility only for JCRequestCenter
+struct JCRequestUtility {
+  static func object2Data(_ obj: Codable?) -> Data? {
     guard let obj = obj else {
       return nil
     }
     return JCSerialization.encode(obj)
   }
 
-  public static func object2UrlParameters(_ obj: Codable?) -> [String: String]? {
+  static func object2UrlParameters(_ obj: Codable?) -> [String: String]? {
     guard let obj = obj else {
       return nil
     }

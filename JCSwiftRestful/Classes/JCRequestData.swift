@@ -15,6 +15,8 @@ public enum JCHttpMethod: String {
   case delete
 }
 
+/// Encapsulating an API request into an object is a good habit.
+/// This helps you focus on one thing at one time, and pretty easy while doing maintenance.
 public protocol JCRequestData {
   var id: String? { get }
   var apiPath: String { get }
@@ -25,7 +27,7 @@ public protocol JCRequestData {
 
 // JCRequestData default implementation Example
 
-//extension JCRequestData {
+// extension JCRequestData {
 //  var id: String {
 //    return UUID().uuidString
 //  }
@@ -50,4 +52,4 @@ public protocol JCRequestData {
 //    }
 //    return header
 //  }
-//}
+// }

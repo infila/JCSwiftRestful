@@ -12,14 +12,14 @@ import XCTest
 class JCLocalPersistentTestCase: XCTestCase {
   func testExample() {
     Person.clear()
-    let allFileAmount = JCLocalPersistent.shared.allFileName().count
+    let allFileAmount = JCLocalPersistent.shared.allFileNames().count
     let person1 = Person(name: "A", age: 18)
     let person2 = Person(name: "B", age: 19)
 
     XCTAssert(person1.save())
     XCTAssert(person2.save())
 
-    var people = [Person].load()
+    let people = [Person].load()
     XCTAssert(people.count == 2)
 
     person2.age = 20
@@ -36,7 +36,7 @@ class JCLocalPersistentTestCase: XCTestCase {
     let newPerson2 = Person.load(byId: "C")
     XCTAssert(newPerson2?.children?.count == 2)
 
-    let newAllFileAmount = JCLocalPersistent.shared.allFileName().count
+    let newAllFileAmount = JCLocalPersistent.shared.allFileNames().count
     XCTAssert(newAllFileAmount - allFileAmount == 1)
 
     Person.clear()

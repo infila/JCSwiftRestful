@@ -8,8 +8,11 @@
 import Foundation
 
 public struct JCRequestError: Error, Codable {
+  /// Incorrect URL string
   public static let URL_ERROR = JCRequestError(errorCode: 1000)
+  /// Invalid network or timeout happened
   public static let NETWORK_ERROR = JCRequestError(errorCode: 1001)
+  /// Cannot decode responseData from server
   public static let RESULT_JSON_ERROR = JCRequestError(errorCode: 1002)
 
   public var errorCode: Int

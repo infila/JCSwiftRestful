@@ -10,7 +10,7 @@ import Foundation
 import JCSwiftCommon
 
 class Person: JCPersistentObject {
-  var id: String {
+  func persistentId() -> String {
     return name
   }
 

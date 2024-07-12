@@ -8,6 +8,7 @@
 import Foundation
 import JCSwiftCommon
 
+/// API Requst Center, Singleton
 public final class JCRequestCenter {
   public typealias ResponseOnSuccess = (_ requestData: JCRequestData, _ response: Data) -> Void
   public typealias ResponseOnApiError = (_ requestData: JCRequestData, _ apiError: JCRequestError) -> Void
@@ -15,14 +16,23 @@ public final class JCRequestCenter {
 
   public static let shared = JCRequestCenter()
   public var timeoutInterval: TimeInterval = 15
+  /// Full path url = domainUrl + JCRequestData.apiPath
+  /// Set domainUrl like "www.x.com" and (some JCRequestData).apiPath = "/i/flow/password_reset" is recommanded
   public var domainUrl: String = ""
+  /// Any Callback after getting Response from server, like ResponseOnSuccess(), will invoked on main thread
+  /// if invokeClosureOnMainThread = true.
+  /// So that it's safe for you to update UI in those closures.
   public var invokeClosureOnMainThread = true
   public var consoleLogEnable = true
   public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
 
+  /// Will be called before send request. Do any encryption processing if you like.
   public var encryptClosure: ((Data) -> (Data))?
+  /// Will be called after get requestData. If the data encrpted at server side, don't forget decrypt it.
   public var decryptClosure: ((Data) -> (Data))?
 
+  /// Send (some JCRequestData) and get (some Codable) as call back
+  /// Usually used while get informations from server side
   public func sendRequest<T>(_ request: JCRequestData, completion: @escaping (Result<T, JCRequestError>) -> Void) where T: Codable {
     JCRequestCenter.shared.sendRequest(request) { _, response in
       var responseData: Data
@@ -43,6 +53,8 @@ public final class JCRequestCenter {
     }
   }
 
+  /// Send (some JCRequestData) and get a Bool as call back
+  /// Usually used while update or upload something to server side
   public func sendRequest(_ request: JCRequestData, completion: @escaping (Result<Bool, JCRequestError>) -> Void) {
     JCRequestCenter.shared.sendRequest(request) { _, _ in
       completion(.success(true))
@@ -53,6 +65,7 @@ public final class JCRequestCenter {
     }
   }
 
+  /// If the other two sendRequest() methods is not suitable in your case, this helps
   public func sendRequest(_ request: JCRequestData,
                           onSuccess: @escaping (_ requestData: JCRequestData, _ response: Data) -> Void,
                           onApiError: @escaping (_ requestData: JCRequestData, _ apiError: JCRequestError) -> Void,
