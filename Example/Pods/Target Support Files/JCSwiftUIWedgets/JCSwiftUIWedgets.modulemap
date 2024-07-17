@@ -1,0 +1,6 @@
+framework module JCSwiftUIWedgets {
+  umbrella header "JCSwiftUIWedgets-umbrella.h"
+
+  export *
+  module * { export * }
+}

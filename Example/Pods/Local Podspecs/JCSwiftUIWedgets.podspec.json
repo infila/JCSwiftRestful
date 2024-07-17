@@ -1,0 +1,33 @@
+{
+  "name": "JCSwiftUIWedgets",
+  "version": "0.1.0",
+  "summary": "Customized SwiftUI Wedgets",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/James/JCSwiftUIWedgets",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "James": "infilachen@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/James/JCSwiftUIWedgets.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://www.linkedin.com/in/jameschen5428",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "JCSwiftUIWedgets/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "SwiftUI+Ext",
+      "source_files": "JCSwiftUIWedgets/Classes/SwiftUI+Ext/*"
+    },
+    {
+      "name": "Wedgets",
+      "source_files": "JCSwiftUIWedgets/Classes/Wedgets/*"
+    }
+  ]
+}

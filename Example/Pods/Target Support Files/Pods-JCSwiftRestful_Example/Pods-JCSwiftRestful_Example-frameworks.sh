@@ -178,10 +178,12 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftCommon/JCSwiftCommon.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftRestful/JCSwiftRestful.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftUIWedgets/JCSwiftUIWedgets.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftCommon/JCSwiftCommon.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftRestful/JCSwiftRestful.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JCSwiftUIWedgets/JCSwiftUIWedgets.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

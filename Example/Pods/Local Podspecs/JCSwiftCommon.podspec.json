@@ -15,6 +15,7 @@
     "git": "https://github.com/infila/JCSwiftCommon",
     "tag": "1.0.0"
   },
+  "social_media_url": "https://www.linkedin.com/in/jameschen5428",
   "platforms": {
     "ios": "13.0"
   },
@@ -27,10 +28,6 @@
     {
       "name": "Foundation+Ext",
       "source_files": "JCSwiftCommon/Classes/Foundation+Ext/*"
-    },
-    {
-      "name": "SwiftUI+Ext",
-      "source_files": "JCSwiftCommon/Classes/SwiftUI+Ext/*"
     }
   ]
 }

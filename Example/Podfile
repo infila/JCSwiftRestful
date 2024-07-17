@@ -8,6 +8,8 @@ target 'JCSwiftRestful_Example' do
 #  pod 'JCSwiftCommon', :git => "https://github.com/infila/JCSwiftCommon.git"
   pod 'JCSwiftCommon', :path => "../../JCSwiftCommon"
 
+  pod 'JCSwiftUIWedgets', :path => '../../JCSwiftUIWedgets'
+  
   target 'JCSwiftRestful_Tests' do
     inherit! :search_paths
 

@@ -1,7 +1,7 @@
 {
   "name": "JCSwiftRestful",
   "version": "0.1.0",
-  "summary": "A short description of JCSwiftRestful.",
+  "summary": "A framework helps you pretty easy to implement as RESTful API style",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/James/JCSwiftRestful",
   "license": {
@@ -12,9 +12,10 @@
     "James": "infilachen@gmail.com"
   },
   "source": {
-    "git": "https://github.com/James/JCSwiftRestful.git",
+    "git": "https://github.com/infila/JCSwiftRestful.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://www.linkedin.com/in/jameschen5428",
   "platforms": {
     "ios": "13.0"
   },

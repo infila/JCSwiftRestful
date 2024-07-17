@@ -2,27 +2,34 @@ PODS:
   - JCSwiftCommon (1.0.0):
     - JCSwiftCommon/Common (= 1.0.0)
     - "JCSwiftCommon/Foundation+Ext (= 1.0.0)"
-    - "JCSwiftCommon/SwiftUI+Ext (= 1.0.0)"
   - JCSwiftCommon/Common (1.0.0)
   - "JCSwiftCommon/Foundation+Ext (1.0.0)"
-  - "JCSwiftCommon/SwiftUI+Ext (1.0.0)"
   - JCSwiftRestful (0.1.0):
     - JCSwiftCommon
+  - JCSwiftUIWedgets (0.1.0):
+    - "JCSwiftUIWedgets/SwiftUI+Ext (= 0.1.0)"
+    - JCSwiftUIWedgets/Wedgets (= 0.1.0)
+  - "JCSwiftUIWedgets/SwiftUI+Ext (0.1.0)"
+  - JCSwiftUIWedgets/Wedgets (0.1.0)
 
 DEPENDENCIES:
   - JCSwiftCommon (from `../../JCSwiftCommon`)
   - JCSwiftRestful (from `../`)
+  - JCSwiftUIWedgets (from `../../JCSwiftUIWedgets`)
 
 EXTERNAL SOURCES:
   JCSwiftCommon:
     :path: "../../JCSwiftCommon"
   JCSwiftRestful:
     :path: "../"
+  JCSwiftUIWedgets:
+    :path: "../../JCSwiftUIWedgets"
 
 SPEC CHECKSUMS:
-  JCSwiftCommon: 9c35348e56e35bca983ec036ef74ab5378428ca3
-  JCSwiftRestful: 0c0f8285555cffacf464bc28b2de230c16790195
+  JCSwiftCommon: 51080cdce6b611e2506d1983b3d056c83dd115d6
+  JCSwiftRestful: 4765112f7027ce16f395f1091d1847ae6071468e
+  JCSwiftUIWedgets: fd3842594f42d6ca2e9395f347a59d8efe94254f
 
-PODFILE CHECKSUM: f0667021d57f43aa040a42773d3d85c5fe344a03
+PODFILE CHECKSUM: 09dc155e2094a277084162be9288355704abe46a
 
 COCOAPODS: 1.15.2

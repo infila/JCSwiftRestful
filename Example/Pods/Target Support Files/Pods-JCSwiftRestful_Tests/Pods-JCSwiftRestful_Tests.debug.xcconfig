@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftCommon" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftRestful"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftCommon" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftRestful" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftUIWedgets"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftCommon/JCSwiftCommon.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftRestful/JCSwiftRestful.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "JCSwiftCommon" -framework "JCSwiftRestful"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftCommon/JCSwiftCommon.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftRestful/JCSwiftRestful.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/JCSwiftUIWedgets/JCSwiftUIWedgets.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "JCSwiftCommon" -framework "JCSwiftRestful" -framework "JCSwiftUIWedgets"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
