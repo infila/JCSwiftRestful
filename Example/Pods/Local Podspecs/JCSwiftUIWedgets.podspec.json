@@ -26,6 +26,10 @@
       "source_files": "JCSwiftUIWedgets/Classes/SwiftUI+Ext/*"
     },
     {
+      "name": "Configure",
+      "source_files": "JCSwiftUIWedgets/Classes/Configure/*"
+    },
+    {
       "name": "Wedgets",
       "source_files": "JCSwiftUIWedgets/Classes/Wedgets/*"
     }

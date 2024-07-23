@@ -7,8 +7,10 @@ PODS:
   - JCSwiftRestful (0.1.0):
     - JCSwiftCommon
   - JCSwiftUIWedgets (0.1.0):
+    - JCSwiftUIWedgets/Configure (= 0.1.0)
     - "JCSwiftUIWedgets/SwiftUI+Ext (= 0.1.0)"
     - JCSwiftUIWedgets/Wedgets (= 0.1.0)
+  - JCSwiftUIWedgets/Configure (0.1.0)
   - "JCSwiftUIWedgets/SwiftUI+Ext (0.1.0)"
   - JCSwiftUIWedgets/Wedgets (0.1.0)
 
@@ -28,7 +30,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   JCSwiftCommon: 51080cdce6b611e2506d1983b3d056c83dd115d6
   JCSwiftRestful: 4765112f7027ce16f395f1091d1847ae6071468e
-  JCSwiftUIWedgets: fd3842594f42d6ca2e9395f347a59d8efe94254f
+  JCSwiftUIWedgets: fd4ced122532d96136359504aa7745025f64ef14
 
 PODFILE CHECKSUM: 09dc155e2094a277084162be9288355704abe46a
 

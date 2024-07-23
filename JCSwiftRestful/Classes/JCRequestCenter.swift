@@ -22,6 +22,7 @@ public final class JCRequestCenter {
   /// Any Callback after getting Response from server, like ResponseOnSuccess(), will invoked on main thread
   /// if invokeClosureOnMainThread = true.
   /// So that it's safe for you to update UI in those closures.
+  /// NO effect on async functions
   public var invokeClosureOnMainThread = true
   public var consoleLogEnable = true
   public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
@@ -50,6 +51,27 @@ public final class JCRequestCenter {
       completion(.failure(apiError))
     } onNetworkError: { _, _ in
       completion(.failure(JCRequestError.NETWORK_ERROR))
+    }
+  }
+
+  public func sendRequest<T>(_ request: JCRequestData, decodeType: T.Type) async throws -> T where T: Codable {
+    let result = await JCRequestCenter.shared.sendRequest(request)
+    if let error = result.2 as? JCRequestError {
+      throw error
+    } else if var responseData = result.1 {
+      if decodeType == Bool.self {
+        return true as! T
+      }
+      if let decryptClosure = decryptClosure {
+        responseData = decryptClosure(responseData)
+      }
+      if let model = JCSerialization.decode(from: responseData, decodeType: T.self) {
+        return model
+      } else {
+        throw JCRequestError.RESULT_JSON_ERROR
+      }
+    } else {
+      throw JCRequestError.NETWORK_ERROR
     }
   }
 
@@ -86,8 +108,8 @@ public final class JCRequestCenter {
     httpRequest(urlPath: urlPath, header: header, body: body, method: request.method) { response, data, error in
       if self.consoleLogEnable {
         print("JCRequestCenter: Receive from Url:\(urlString)" +
-          (response == nil ? " statusCode: \(response!.statusCode)" : "statusCode: null") +
-          (data == nil ? " data: \(String(data: data!, encoding: .utf8) ?? "")" : "data: null"))
+          (response != nil ? " statusCode: \(response!.statusCode)" : "statusCode: null") +
+          (data != nil ? " data: \(String(data: data!, encoding: .utf8) ?? "")" : "data: null"))
       }
       self.handleResponse(request: request,
                           response: response,
@@ -106,6 +128,9 @@ public final class JCRequestCenter {
 
 private extension JCRequestCenter {
   func urlString(request: JCRequestData) -> String {
+    if request.apiPath.starts(with: "http") {
+      return request.apiPath
+    }
     return domainUrl + request.apiPath
   }
 
@@ -130,8 +155,8 @@ private extension JCRequestCenter {
 
     if consoleLogEnable {
       print("JCRequestCenter: sending to Url:\(url) method: \(method.rawValue)" +
-        (header == nil ? " header: \(header!)" : "header: null") +
-        (body == nil ? " body: \(String(data: body!, encoding: .utf8) ?? "")" : "body: null"))
+        (header != nil ? " header: \(header!)" : "header: null") +
+        (body != nil ? " body: \(String(data: body!, encoding: .utf8) ?? "")" : "body: null"))
     }
 
     let operation = BlockOperation {
@@ -141,6 +166,62 @@ private extension JCRequestCenter {
       dataTask.resume()
     }
     operationQueue.addOperation(operation)
+  }
+
+  func sendRequest(_ request: JCRequestData) async -> (JCRequestData, Data?, Error?) {
+    let urlString = self.urlString(request: request).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+    let header = request.header
+    var urlPath = urlString
+    var body: Data?
+    if request.method == .get {
+      let parameters = JCRequestUtility.object2UrlParameters(request.parameter)
+      urlPath = urlWithParameters(urlString, parameter: parameters)
+    } else {
+      body = JCRequestUtility.object2Data(request.parameter)
+      if body != nil, let encryptClosure = encryptClosure {
+        body = encryptClosure(body!)
+      }
+    }
+    let result: (response: HTTPURLResponse?, data: Data?, error: Error?) = await httpRequest(urlPath: urlPath, header: header, body: body, method: request.method)
+    if consoleLogEnable {
+      print("JCRequestCenter: Receive from Url:\(urlString)" +
+        (result.response != nil ? " statusCode: \(result.response!.statusCode)" : "statusCode: null") +
+        (result.data != nil ? " data: \(String(data: result.data!, encoding: .utf8) ?? "")" : "data: null"))
+    }
+    return handleResponse(request: request,
+                          response: result.response,
+                          responseBody: result.data,
+                          error: result.error)
+  }
+
+  func httpRequest(urlPath: String,
+                   header: [String: String]?,
+                   body: Data?,
+                   method: JCHttpMethod) async -> (HTTPURLResponse?, Data?, Error?) {
+    guard let url = URL(string: urlPath) else {
+      if consoleLogEnable {
+        print("JCRequestCenter: Invalid URL: \(urlPath)")
+      }
+      return (nil, nil, JCRequestError.URL_ERROR)
+    }
+
+    var urlRequest = URLRequest(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
+    urlRequest.httpMethod = method.rawValue
+    urlRequest.allHTTPHeaderFields = header
+    urlRequest.httpBody = body
+
+    if consoleLogEnable {
+      print("JCRequestCenter: sending to Url:\(url) method: \(method.rawValue)" +
+        (header != nil ? " header: \(header!)" : "header: null") +
+        (body != nil ? " body: \(String(data: body!, encoding: .utf8) ?? "")" : "body : null"))
+    }
+
+    do {
+      let result = try await URLSession.shared.data(for: urlRequest)
+      return (result.1 as? HTTPURLResponse, result.0, nil)
+    } catch {
+      return (nil, nil, error)
+    }
   }
 
   func handleResponse(request: JCRequestData,
@@ -188,6 +269,31 @@ private extension JCRequestCenter {
         }
       }
     }
+  }
+
+  func handleResponse(request: JCRequestData,
+                      response: HTTPURLResponse?,
+                      responseBody: Data?,
+                      error: Error?) -> (JCRequestData, Data?, Error?) {
+    var result: (request: JCRequestData, responseData: Data?, error: Error?) = (request, nil, nil)
+    guard let response = response, let responseBody = responseBody, error == nil else {
+      result.error = URLError(.badServerResponse)
+      return result
+    }
+
+    if (200 ... 299).contains(response.statusCode) {
+      result.responseData = responseBody
+      result.error = nil
+    } else {
+      if let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) {
+        result.responseData = nil
+        result.error = JCRequestError(errorCode: apiError.errorCode, reason: apiError.reason)
+      } else {
+        result.responseData = nil
+        result.error = JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8))
+      }
+    }
+    return result
   }
 
   func urlWithParameters(_ urlString: String, parameter: [String: String]?) -> String {

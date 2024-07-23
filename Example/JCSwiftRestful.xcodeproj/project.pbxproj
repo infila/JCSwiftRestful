@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		F20696ED2C49C10C00F8BF8D /* JCRequestDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */; };
 		F257FBBE2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257FBBD2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift */; };
 		F257FBC02C3CDC64002A62D7 /* PersonDemo.json in Resources */ = {isa = PBXBuildFile; fileRef = F257FBBF2C3CDC64002A62D7 /* PersonDemo.json */; };
 		F257FBC22C3CDC85002A62D7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257FBC12C3CDC85002A62D7 /* Person.swift */; };
@@ -24,6 +25,7 @@
 		F2E50A612C35F49F0096572E /* JCRequestCenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */; };
 		F2E50A632C35F4CC0096572E /* JCRequestUtilityTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */; };
 		F2E50A652C35F4FB0096572E /* JCRequestErrorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */; };
+		F2E841972C4EE8700059EDF8 /* JCSerializationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */; };
 		F2EA2A832C23445700CC96E1 /* JCSwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EA2A822C23445700CC96E1 /* JCSwiftCommon.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		989F99CFA3CAB716BDE340D6 /* JCSwiftRestful.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCSwiftRestful.podspec; path = ../JCSwiftRestful.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EF86525268AE3B817389E8E2 /* Pods-JCSwiftRestful_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSwiftRestful_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestDataTestCase.swift; sourceTree = "<group>"; };
 		F257FBBD2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBundleFileLoaderTestCase.swift; sourceTree = "<group>"; };
 		F257FBBF2C3CDC64002A62D7 /* PersonDemo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PersonDemo.json; sourceTree = "<group>"; };
 		F257FBC12C3CDC85002A62D7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestCenterTestCase.swift; sourceTree = "<group>"; };
 		F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestUtilityTestCase.swift; sourceTree = "<group>"; };
 		F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestErrorTestCase.swift; sourceTree = "<group>"; };
+		F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSerializationTestCase.swift; sourceTree = "<group>"; };
 		F2EA2A822C23445700CC96E1 /* JCSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JCSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3245DF3CC266D2FB2353D0F /* Pods-JCSwiftRestful_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSwiftRestful_Example.debug.xcconfig"; path = "Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +143,9 @@
 				F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */,
 				F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */,
 				F2A8ED722C38C81100A6660F /* JCLocalPersistentTestCase.swift */,
+				F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */,
 				F257FBBD2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift */,
+				F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -378,7 +384,9 @@
 				F2E50A612C35F49F0096572E /* JCRequestCenterTestCase.swift in Sources */,
 				F257FBBE2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift in Sources */,
 				F2A8ED732C38C81100A6660F /* JCLocalPersistentTestCase.swift in Sources */,
+				F2E841972C4EE8700059EDF8 /* JCSerializationTestCase.swift in Sources */,
 				F257FBC22C3CDC85002A62D7 /* Person.swift in Sources */,
+				F20696ED2C49C10C00F8BF8D /* JCRequestDataTestCase.swift in Sources */,
 				F2E50A632C35F4CC0096572E /* JCRequestUtilityTestCase.swift in Sources */,
 				F2E50A652C35F4FB0096572E /* JCRequestErrorTestCase.swift in Sources */,
 			);

@@ -16,9 +16,8 @@ public enum JCHttpMethod: String {
 }
 
 /// Encapsulating an API request into an object is a good habit.
-/// This helps you focus on one thing at one time, and pretty easy while doing maintenance.
+/// This helps you focus on one thing at one time, and pretty easy for doing maintenance.
 public protocol JCRequestData {
-  var id: String? { get }
   var apiPath: String { get }
   var method: JCHttpMethod { get }
   var header: [String: String] { get }
@@ -43,13 +42,12 @@ public protocol JCRequestData {
 //  var header: [String: String] {
 //    var header = [String: String]()
 //    header["Accept"] = "application/json, text/plain, */*"
-//    header["Accept-Language"] = "en-US,en;q=0.9"
+//    header["Accept-Language"] = "en-US,en;q=0.8"
 //    header["Content-Type"] = "application/json"
-//    header["client-version"] = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-//    header["source"] = "ios"
-//    if let token = UserManager.shared.userToken, token.count != 0 {
-//      header["Authorization"] = "userToken"
-//    }
+//    header["App-Type"] = "iOS"
+////    if let token = UserManager.shared.userToken, token.count != 0 {
+////      header["authorization"] = token
+////    }
 //    return header
 //  }
 // }
