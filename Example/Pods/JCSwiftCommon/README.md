@@ -1,9 +1,9 @@
-# JCSwiftRestful
+# JCSwiftCommon
 
-[![CI Status](https://img.shields.io/travis/James/JCSwiftRestful.svg?style=flat)](https://travis-ci.org/James/JCSwiftRestful)
-[![Version](https://img.shields.io/cocoapods/v/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
-[![License](https://img.shields.io/cocoapods/l/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
-[![Platform](https://img.shields.io/cocoapods/p/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
+[![CI Status](https://img.shields.io/travis/James/JCSwiftCommon.svg?style=flat)](https://travis-ci.org/James/JCSwiftCommon)
+[![Version](https://img.shields.io/cocoapods/v/JCSwiftCommon.svg?style=flat)](https://cocoapods.org/pods/JCSwiftCommon)
+[![License](https://img.shields.io/cocoapods/l/JCSwiftCommon.svg?style=flat)](https://cocoapods.org/pods/JCSwiftCommon)
+[![Platform](https://img.shields.io/cocoapods/p/JCSwiftCommon.svg?style=flat)](https://cocoapods.org/pods/JCSwiftCommon)
 
 ## Introduction
 
@@ -17,9 +17,8 @@ Here are three frameworks for junior developers. They can help you increase deve
 
 ## Example
 
-<!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-Example application is still developing. Instead, read the TestCase code in Tests folder can help.
-I'll write some example code here later. Thanks for waiting.
+To see more examples or test cases, please go to:
+[JCSwiftRestful](https://github.com/infila/JCSwiftRestful)
 
 ## Requirements
 
@@ -27,18 +26,17 @@ iOS Deployment Target >= 13.0
 
 ## Installation
 
-JCSwiftRestful is available through [CocoaPods](https://cocoapods.org). To install
+JCSwiftCommon is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'JCSwiftRestful'
+pod 'JCSwiftCommon'
 ```
 
 ## Author
 
 James, infilachen@gmail.com, [LinkedIn](https://www.linkedin.com/in/jameschen5428)
-Fanny, fanfan.feng9@gmail.com
 
 ## License
 
-JCSwiftRestful is available under the MIT license. See the LICENSE file for more info.
+JCSwiftCommon is available under the MIT license. See the LICENSE file for more info.

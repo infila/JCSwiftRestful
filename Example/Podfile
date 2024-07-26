@@ -5,10 +5,11 @@ platform :ios, '13.0'
 target 'JCSwiftRestful_Example' do
   pod 'JCSwiftRestful', :path => '../'
 
-#  pod 'JCSwiftCommon', :git => "https://github.com/infila/JCSwiftCommon.git"
-  pod 'JCSwiftCommon', :path => "../../JCSwiftCommon"
+  pod 'JCSwiftCommon', :git => "https://github.com/infila/JCSwiftCommon.git"
+#  pod 'JCSwiftCommon', :path => "../../JCSwiftCommon"
 
-  pod 'JCSwiftUIWedgets', :path => '../../JCSwiftUIWedgets'
+  pod 'JCSwiftUIWedgets', :git => "https://github.com/infila/JCSwiftUIWedgets.git"
+#  pod 'JCSwiftUIWedgets', :path => '../../JCSwiftUIWedgets'
   
   target 'JCSwiftRestful_Tests' do
     inherit! :search_paths

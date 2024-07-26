@@ -2,36 +2,48 @@ PODS:
   - JCSwiftCommon (1.0.0):
     - JCSwiftCommon/Common (= 1.0.0)
     - "JCSwiftCommon/Foundation+Ext (= 1.0.0)"
-  - JCSwiftCommon/Common (1.0.0)
+  - JCSwiftCommon/Common (1.0.0):
+    - "JCSwiftCommon/Foundation+Ext"
   - "JCSwiftCommon/Foundation+Ext (1.0.0)"
-  - JCSwiftRestful (0.1.0):
+  - JCSwiftRestful (1.0.0):
     - JCSwiftCommon
-  - JCSwiftUIWedgets (0.1.0):
-    - JCSwiftUIWedgets/Configure (= 0.1.0)
-    - "JCSwiftUIWedgets/SwiftUI+Ext (= 0.1.0)"
-    - JCSwiftUIWedgets/Wedgets (= 0.1.0)
-  - JCSwiftUIWedgets/Configure (0.1.0)
-  - "JCSwiftUIWedgets/SwiftUI+Ext (0.1.0)"
-  - JCSwiftUIWedgets/Wedgets (0.1.0)
+  - JCSwiftUIWedgets (1.0.0):
+    - JCSwiftUIWedgets/Configure (= 1.0.0)
+    - "JCSwiftUIWedgets/SwiftUI+Ext (= 1.0.0)"
+    - JCSwiftUIWedgets/Wedgets (= 1.0.0)
+  - JCSwiftUIWedgets/Configure (1.0.0):
+    - "JCSwiftUIWedgets/SwiftUI+Ext"
+  - "JCSwiftUIWedgets/SwiftUI+Ext (1.0.0)"
+  - JCSwiftUIWedgets/Wedgets (1.0.0):
+    - JCSwiftUIWedgets/Configure
+    - "JCSwiftUIWedgets/SwiftUI+Ext"
 
 DEPENDENCIES:
-  - JCSwiftCommon (from `../../JCSwiftCommon`)
+  - JCSwiftCommon (from `https://github.com/infila/JCSwiftCommon.git`)
   - JCSwiftRestful (from `../`)
-  - JCSwiftUIWedgets (from `../../JCSwiftUIWedgets`)
+  - JCSwiftUIWedgets (from `https://github.com/infila/JCSwiftUIWedgets.git`)
 
 EXTERNAL SOURCES:
   JCSwiftCommon:
-    :path: "../../JCSwiftCommon"
+    :git: https://github.com/infila/JCSwiftCommon.git
   JCSwiftRestful:
     :path: "../"
   JCSwiftUIWedgets:
-    :path: "../../JCSwiftUIWedgets"
+    :git: https://github.com/infila/JCSwiftUIWedgets.git
+
+CHECKOUT OPTIONS:
+  JCSwiftCommon:
+    :commit: b2e730cec8237dfb9ce9dedb0cedddd2fd9960c8
+    :git: https://github.com/infila/JCSwiftCommon.git
+  JCSwiftUIWedgets:
+    :commit: 78e50e1fe6b792c4ec170986034de8859c2b1293
+    :git: https://github.com/infila/JCSwiftUIWedgets.git
 
 SPEC CHECKSUMS:
-  JCSwiftCommon: 51080cdce6b611e2506d1983b3d056c83dd115d6
-  JCSwiftRestful: 4765112f7027ce16f395f1091d1847ae6071468e
-  JCSwiftUIWedgets: fd4ced122532d96136359504aa7745025f64ef14
+  JCSwiftCommon: f079abcd366750aa887d3bb12a5d4136299bb655
+  JCSwiftRestful: e14f009df0759bb88660fe4a7af830a6693e4e4c
+  JCSwiftUIWedgets: bd718e3a385d0bfdefc77dcec6f4d258a9433565
 
-PODFILE CHECKSUM: 09dc155e2094a277084162be9288355704abe46a
+PODFILE CHECKSUM: b3b68686947034c11fe98935b28891d534b87aa2
 
 COCOAPODS: 1.15.2
