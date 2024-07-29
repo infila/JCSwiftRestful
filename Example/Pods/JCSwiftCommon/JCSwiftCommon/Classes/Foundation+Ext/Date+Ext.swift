@@ -9,21 +9,35 @@ import Foundation
 
 public extension Date {
   struct FormatStyle {
-    static let m2d2y4Splash = "MM/dd/yyyy" /// 12/31/1970
-    static let m2d2y2Splash = "MM/dd/yy" /// 12/31/70
-    static let m3d2y4Splash = "MMM/dd/yyyy" /// Dec/31/1970
-    static let m3d2y4SQS = "MMM dd, yyyy" /// Dec 31, 1970
-    static let y4m3d2Splash = "yyyy/MMM/dd" /// 1970/Dec/31
-    static let y4m2d2Dash = "yyyy-MM-dd" /// 1970-12-31
-    static let d2m2y2Splash = "dd/mm/yy" /// 31/12/70
-    static let d2m2y4Splash = "dd/MM/yyyy" /// 31/12/1970
-    static let d2m2y4Dot = "dd.MM.yyyy" /// 31.12.1970
-    static let d2mMAXy2Space = "dd MMMM yyyy" /// 31 December 1970
+    /// 12/31/1970
+    public static let m2d2y4Splash = "MM/dd/yyyy"
+    /// 12/31/70
+    public static let m2d2y2Splash = "MM/dd/yy"
+    /// Dec/31/1970
+    public static let m3d2y4Splash = "MMM/dd/yyyy"
+    /// Dec 31, 1970
+    public static let m3d2y4SQS = "MMM dd, yyyy"
+    /// 1970/Dec/31
+    public static let y4m3d2Splash = "yyyy/MMM/dd"
+    /// 1970-12-31
+    public static let y4m2d2Dash = "yyyy-MM-dd"
+    /// 31/12/70
+    public static let d2m2y2Splash = "dd/mm/yy"
+    /// 31/12/1970
+    public static let d2m2y4Splash = "dd/MM/yyyy"
+    /// 31.12.1970
+    public static let d2m2y4Dot = "dd.MM.yyyy"
+    /// 31 December 1970
+    public static let d2mMAXy2Space = "dd MMMM yyyy"
 
-    static let H2m2s2 = "HH:mm:ss" /// 01:59:59
-    static let H1m2 = "H:mm" /// 1:59
-    static let h2m2s2 = "hh:mm:ss a" /// 01:59:59 AM
-    static let h1m2 = "h:mm a" /// 1:59 AM
+    /// 01:59:59
+    public static let H2m2s2 = "HH:mm:ss"
+    /// 1:59
+    public static let H1m2 = "H:mm"
+    /// 01:59:59 AM
+    public static let h2m2s2 = "hh:mm:ss a"
+    /// 1:59 AM
+    public static let h1m2 = "h:mm a"
   }
 
   init(string: String, withFormat style: String) {

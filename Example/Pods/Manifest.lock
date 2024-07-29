@@ -7,43 +7,35 @@ PODS:
   - "JCSwiftCommon/Foundation+Ext (1.0.0)"
   - JCSwiftRestful (1.0.0):
     - JCSwiftCommon
-  - JCSwiftUIWedgets (1.0.0):
-    - JCSwiftUIWedgets/Configure (= 1.0.0)
-    - "JCSwiftUIWedgets/SwiftUI+Ext (= 1.0.0)"
-    - JCSwiftUIWedgets/Wedgets (= 1.0.0)
-  - JCSwiftUIWedgets/Configure (1.0.0):
+  - JCSwiftUIWedgets (1.0.1):
+    - JCSwiftUIWedgets/Configure (= 1.0.1)
+    - "JCSwiftUIWedgets/SwiftUI+Ext (= 1.0.1)"
+    - JCSwiftUIWedgets/Wedgets (= 1.0.1)
+  - JCSwiftUIWedgets/Configure (1.0.1):
     - "JCSwiftUIWedgets/SwiftUI+Ext"
-  - "JCSwiftUIWedgets/SwiftUI+Ext (1.0.0)"
-  - JCSwiftUIWedgets/Wedgets (1.0.0):
+  - "JCSwiftUIWedgets/SwiftUI+Ext (1.0.1)"
+  - JCSwiftUIWedgets/Wedgets (1.0.1):
     - JCSwiftUIWedgets/Configure
     - "JCSwiftUIWedgets/SwiftUI+Ext"
 
 DEPENDENCIES:
-  - JCSwiftCommon (from `https://github.com/infila/JCSwiftCommon.git`)
+  - JCSwiftCommon (from `../../JCSwiftCommon`)
   - JCSwiftRestful (from `../`)
-  - JCSwiftUIWedgets (from `https://github.com/infila/JCSwiftUIWedgets.git`)
+  - JCSwiftUIWedgets (from `../../JCSwiftUIWedgets`)
 
 EXTERNAL SOURCES:
   JCSwiftCommon:
-    :git: https://github.com/infila/JCSwiftCommon.git
+    :path: "../../JCSwiftCommon"
   JCSwiftRestful:
     :path: "../"
   JCSwiftUIWedgets:
-    :git: https://github.com/infila/JCSwiftUIWedgets.git
-
-CHECKOUT OPTIONS:
-  JCSwiftCommon:
-    :commit: b2e730cec8237dfb9ce9dedb0cedddd2fd9960c8
-    :git: https://github.com/infila/JCSwiftCommon.git
-  JCSwiftUIWedgets:
-    :commit: 78e50e1fe6b792c4ec170986034de8859c2b1293
-    :git: https://github.com/infila/JCSwiftUIWedgets.git
+    :path: "../../JCSwiftUIWedgets"
 
 SPEC CHECKSUMS:
   JCSwiftCommon: f079abcd366750aa887d3bb12a5d4136299bb655
   JCSwiftRestful: e14f009df0759bb88660fe4a7af830a6693e4e4c
-  JCSwiftUIWedgets: bd718e3a385d0bfdefc77dcec6f4d258a9433565
+  JCSwiftUIWedgets: 7242cc3ed6dc9479dc1169d268326f0a4a3c9ef5
 
-PODFILE CHECKSUM: b3b68686947034c11fe98935b28891d534b87aa2
+PODFILE CHECKSUM: 77cc8b0b7e9eeea0509dd36245f945f7ae1143d1
 
 COCOAPODS: 1.15.2

@@ -37,6 +37,7 @@ pod 'JCSwiftRestful'
 ## Author
 
 James, infilachen@gmail.com, [LinkedIn](https://www.linkedin.com/in/jameschen5428)
+
 Fanny, fanfan.feng9@gmail.com
 
 ## License

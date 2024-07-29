@@ -7,166 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		018AA7DD5AD9A89E230E4A2A1DF9F2A1 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C76DB5F0615432CF289B7AD9CE821 /* Color+Ext.swift */; };
-		0680422583E7CC7C87E02EA0A2A625D2 /* JCPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A08755102D08D96FD3FF176120EDEB0 /* JCPageIndicator.swift */; };
-		0DC9792790FA9BFEA1509A15EFE278EE /* JCProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AC5460257BDC220C4FBDA082EC26D /* JCProgressRing.swift */; };
-		0F445FEC51D9AA648117A292E1B3E5A0 /* JCRequestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C8929CC48BB57513923A3EA1BA3E1 /* JCRequestUtility.swift */; };
-		119EBDB8FB3C1B9F0AB2E193BB9155BB /* JCSwiftRestful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DE6FE9D5B5DABF7A449E7407A27EA3 /* JCSwiftRestful-dummy.m */; };
-		1A7FC6E445C2AB117CFD6EB75A606B00 /* JCLocalPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD675D945E3E4A68D8D2355B7F93398C /* JCLocalPersistent.swift */; };
-		2436DC2372273AD0B3527CD511396AF4 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15CD4160979FA8F80AD117BFCB3E497 /* Double+Ext.swift */; };
+		018AA7DD5AD9A89E230E4A2A1DF9F2A1 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F692823B3B67EC3FF937717C65A99 /* Color+Ext.swift */; };
+		0680422583E7CC7C87E02EA0A2A625D2 /* JCPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCCC84D8DBD8196F5CB35B222123046 /* JCPageIndicator.swift */; };
+		0DC9792790FA9BFEA1509A15EFE278EE /* JCProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5893A7945BA38C30B5E8C1AA38E7A /* JCProgressRing.swift */; };
+		0F445FEC51D9AA648117A292E1B3E5A0 /* JCRequestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D736C3E6EBD410F8A13BB77F66B9D /* JCRequestUtility.swift */; };
+		119EBDB8FB3C1B9F0AB2E193BB9155BB /* JCSwiftRestful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257054B8FA4BE8D86F5B2D5A5ACEFB8 /* JCSwiftRestful-dummy.m */; };
+		1A7FC6E445C2AB117CFD6EB75A606B00 /* JCLocalPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B6CE80BC5FCBD34707ECD8ED9F3CE1 /* JCLocalPersistent.swift */; };
+		2436DC2372273AD0B3527CD511396AF4 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95905D94B14A56D6BD369AFB0A4F983 /* Double+Ext.swift */; };
 		29D6022ECB59EBFC71260F5886DD6536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2D1190EF7F559F6C85AA9EEE956EA0A1 /* JCColorPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BD56EAA394586DF2091A039AD7324C /* JCColorPair.swift */; };
-		2DEE4C8EACFB70FFE15D62D47B5FE674 /* JCRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFB5DA94C297F4F647E58FBF73B177 /* JCRequestData.swift */; };
+		2D1190EF7F559F6C85AA9EEE956EA0A1 /* JCColorPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14394A22E2C612EFB7A60C3AA004AACE /* JCColorPair.swift */; };
+		2DEE4C8EACFB70FFE15D62D47B5FE674 /* JCRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA435FB9F05319315639485D8129D8 /* JCRequestData.swift */; };
 		34DFDC3CEEB290847D2F11FF6E293314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3862B9EBED02366ABA6DCB85D067D27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3EB2A7F0015E903346E239D9C4BC97BA /* JCSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255583423066C359E8519E6693644BA0 /* JCSerialization.swift */; };
-		411D599DB209D0265044DB4BE98CA328 /* JCThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4FB5B2A006A1B17820E3B7573B888 /* JCThemeColor.swift */; };
+		3EB2A7F0015E903346E239D9C4BC97BA /* JCSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385F98EE8B58992685FC6005FEEA4B4 /* JCSerialization.swift */; };
+		411D599DB209D0265044DB4BE98CA328 /* JCThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8F97D6EF66F85037894C684426CC6 /* JCThemeColor.swift */; };
 		4467BC083D00DD503F4A0337E5E8B0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		53223F9366710E5245254E116C157326 /* JCRequestCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAE6B55F14E3287335B04D514EAD2 /* JCRequestCenter.swift */; };
-		53C7B25E5F6F5368CAF80446E08EF37F /* JCRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710C6DCAF616BE47FB50AA12875D3F8 /* JCRequestError.swift */; };
-		5680BCC4A31E6BB2F0BB91D2D1912A1E /* JCSwiftCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD9A31A57D185EAF71E256AEB88D059 /* JCSwiftCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		651F45700C7CFE92C5D222B9C9D4E1F9 /* JCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0209B07AAD01651F6B9A1F5F30902F5 /* JCImagePicker.swift */; };
-		68B65D7D4D4D49633703D99A90766DC0 /* JCLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0265C6C77E84CB1EB8D14C11BB2AE /* JCLoadingView.swift */; };
-		72C0D2C9797917ED149F0D3D88858BFB /* JCSwiftCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2DCD07A28EE3B5EDAA03F67CD9753 /* JCSwiftCommon-dummy.m */; };
+		53223F9366710E5245254E116C157326 /* JCRequestCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA10621F24FD2D2DE6810628B4E584 /* JCRequestCenter.swift */; };
+		53C7B25E5F6F5368CAF80446E08EF37F /* JCRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C263CB8C821664622B3556FBC7FAE /* JCRequestError.swift */; };
+		5680BCC4A31E6BB2F0BB91D2D1912A1E /* JCSwiftCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233D07F99E040EAAD0C2EE9D3C4BF0B0 /* JCSwiftCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651F45700C7CFE92C5D222B9C9D4E1F9 /* JCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E70134ADA207D36189E1270B9D3A3F8 /* JCImagePicker.swift */; };
+		68B65D7D4D4D49633703D99A90766DC0 /* JCLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D8F06EFBCE9710596B6B5B8BAC613 /* JCLoadingView.swift */; };
+		72C0D2C9797917ED149F0D3D88858BFB /* JCSwiftCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E251D4345FD333AAB41C343888D7F37 /* JCSwiftCommon-dummy.m */; };
 		74998DD9E88A99027D2FF3118CBABABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7F5ADD17D17372A479651F8E956983E8 /* JCBundleFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB739CC2C5CB74883BC3CE66D12A2E9 /* JCBundleFileLoader.swift */; };
-		822FAF1D9FE49A41A220221E37B8CCE8 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643D3C7AA3A7ABBCA34B16AE5E81A26 /* Date+Ext.swift */; };
-		837784E63F5006FDC54617E9D6935335 /* JCMessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A3EF23FCAD17CC4C84DF0A894B8E1 /* JCMessageBox.swift */; };
-		84E1D487B7D3DC160A6185461B6214E7 /* JCThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7BDBAEC005203F65B4F2A366A68090 /* JCThemeFont.swift */; };
-		87B54239456C66565AB045B06B940B43 /* JCSwiftUIWedgets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A07D171BF681A54AD08F0018043A /* JCSwiftUIWedgets-dummy.m */; };
-		8C59641CCE7098B30A7BDCCA758A49F8 /* JCSwiftRestful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 864159D1288F2F81F1D75CCC882D3D71 /* JCSwiftRestful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F5ADD17D17372A479651F8E956983E8 /* JCBundleFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3EA83BED0601DCDB7833B0F21B035 /* JCBundleFileLoader.swift */; };
+		822FAF1D9FE49A41A220221E37B8CCE8 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B9F149D9072BC6A47F4660FC042EA /* Date+Ext.swift */; };
+		837784E63F5006FDC54617E9D6935335 /* JCMessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BBEB6648513FBA699685FCAA811A8 /* JCMessageBox.swift */; };
+		84E1D487B7D3DC160A6185461B6214E7 /* JCThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A73C39795EA65E523AC942A9EFD04 /* JCThemeFont.swift */; };
+		87B54239456C66565AB045B06B940B43 /* JCSwiftUIWedgets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4302521413C96C6D1DD32E627DCA91 /* JCSwiftUIWedgets-dummy.m */; };
+		8C59641CCE7098B30A7BDCCA758A49F8 /* JCSwiftRestful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3282A91ABBD452187B4D38C4CF2BD614 /* JCSwiftRestful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A41D5630525112CB0C943F1DAE67CC49 /* Pods-JCSwiftRestful_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76686230A2525FC3FB6E630D22141B /* Pods-JCSwiftRestful_Tests-dummy.m */; };
 		B1D4C71385B6DA0227B4C3C4586224BA /* Pods-JCSwiftRestful_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A786C3A672492056A93B0BBBF2CE9DF0 /* Pods-JCSwiftRestful_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA16D1DC3F86B59D03D2DB4EE1734C3A /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C4F2CFEAE0A6E6CFBF1BBFDFC5D6B /* Image+Ext.swift */; };
-		C06D04A65BB64E0F08715877E52A54AC /* JCImagePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867832ED5352D5B3E3B85B8387A1E27 /* JCImagePickerSheet.swift */; };
+		BA16D1DC3F86B59D03D2DB4EE1734C3A /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BFB98DA5E36BDE60599765A245DCAD /* Image+Ext.swift */; };
+		C06D04A65BB64E0F08715877E52A54AC /* JCImagePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE54DA08687CC638F276FFF6EAC749 /* JCImagePickerSheet.swift */; };
 		C7A07F9F61AA158799843613F2FB0A8F /* Pods-JCSwiftRestful_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B5310EDC334D954DE8FF69766B7999 /* Pods-JCSwiftRestful_Example-dummy.m */; };
-		CAAC4301B347CA31BFD1F19DAD7B2281 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79976829DC68111088C8232CAB3BF2A2 /* View+Ext.swift */; };
+		CAAC4301B347CA31BFD1F19DAD7B2281 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA622E5ED15DDB9992ECA3E966DAC98C /* View+Ext.swift */; };
 		CE8BF21F43965D958EAAAD760B773B70 /* Pods-JCSwiftRestful_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AAE7D78EBC8686BD1A59044EFCA915 /* Pods-JCSwiftRestful_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E6C9DFB89103854C9606C02A140DA2 /* NavigationLink+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60791EBBC059CBFACC6C454BE1AA970F /* NavigationLink+Ext.swift */; };
-		D674B00EA0F00FBDFC0D59D76B6073E6 /* JCButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F1E6E6FD92D42815F475AD9F60419 /* JCButtonStyle.swift */; };
-		D98D9BBD422213769000CA70B46380A7 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F4B35C18DC5F85CCC1A91D72DA7D2 /* String+Ext.swift */; };
-		DAB1A25B6DFD4A2F9506D6A0FA2F3FCC /* JCSwiftUIWedgets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E68E53398373958A20162C4AB6FCC596 /* JCSwiftUIWedgets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB6503C137AFBA168EABF4D8B7445C1A /* JCRetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C83C43EF1796EB2ACEA07926E6410A /* JCRetryView.swift */; };
-		F15518A44797212D2548B33B8386EF58 /* Thread+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81604E250ED9B30F2A57D08535F331 /* Thread+Ext.swift */; };
-		F3BDA96766EE550F814AE20FEB954874 /* JCToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AE407523E325676A1B3B0F0E144AD /* JCToggle.swift */; };
-		FDE73F88B36E7A01D9EEE38C5BB084CB /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F344CA6E00402044ECCCEDD2BA9650 /* Array+Ext.swift */; };
+		D1E6C9DFB89103854C9606C02A140DA2 /* NavigationLink+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF1D8BEF37E0D08D8E134EB30E07D9 /* NavigationLink+Ext.swift */; };
+		D674B00EA0F00FBDFC0D59D76B6073E6 /* JCButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C94D8A70C169D85365DF8746C0768F /* JCButtonStyle.swift */; };
+		D98D9BBD422213769000CA70B46380A7 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E5223DEA3CA4992EC056BD9D8E6D4 /* String+Ext.swift */; };
+		DAB1A25B6DFD4A2F9506D6A0FA2F3FCC /* JCSwiftUIWedgets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F6B5B2A52267256B35E9D479B15765 /* JCSwiftUIWedgets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6503C137AFBA168EABF4D8B7445C1A /* JCRetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92D218D953A045C4E84F093B932EF3 /* JCRetryView.swift */; };
+		F15518A44797212D2548B33B8386EF58 /* Thread+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1067020529A6AC59E08B60C83DE8B5 /* Thread+Ext.swift */; };
+		F3BDA96766EE550F814AE20FEB954874 /* JCToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBC87A416023487AF49B38428F9E51C /* JCToggle.swift */; };
+		FDE73F88B36E7A01D9EEE38C5BB084CB /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399D61AF90F0A4534C3D09E7D0BAB982 /* Array+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		099C32BD6A7C38EA0EBFDDDBA7719C4C /* PBXContainerItemProxy */ = {
+		16C725A410B203D4B535BE1367C9FADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5210700916B1C7BADE73B65BDF8E34E;
 			remoteInfo = JCSwiftCommon;
 		};
-		3DE4B24337CFA13B946BC09CD375D1E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E41C71EFFCDE416C98AB6249D1AD1401;
-			remoteInfo = JCSwiftRestful;
-		};
-		8400F28E07D59B4508D4ABFDA2EEABE9 /* PBXContainerItemProxy */ = {
+		63A28523C7F47EFE7009628815AE84BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C72E26E7EDAA6CD16A3B77F2353BF3F;
 			remoteInfo = "Pods-JCSwiftRestful_Example";
 		};
-		BF1CE30F1B1BEB2E7CAD4BE43490E393 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5210700916B1C7BADE73B65BDF8E34E;
-			remoteInfo = JCSwiftCommon;
-		};
-		F1741F73FED583577C45A99956433542 /* PBXContainerItemProxy */ = {
+		883A51C09C46EC1DF778577CCE68AC3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F80A9AFA3DB2692489E0D0C068371124;
 			remoteInfo = JCSwiftUIWedgets;
 		};
+		D701492EE98D48A25D8723F94051C6F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41C71EFFCDE416C98AB6249D1AD1401;
+			remoteInfo = JCSwiftRestful;
+		};
+		FD1FF2664B588FD39A646818227D30A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5210700916B1C7BADE73B65BDF8E34E;
+			remoteInfo = JCSwiftCommon;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CFB5DA94C297F4F647E58FBF73B177 /* JCRequestData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestData.swift; path = JCSwiftRestful/Classes/JCRequestData.swift; sourceTree = "<group>"; };
-		047C76DB5F0615432CF289B7AD9CE821 /* Color+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/Color+Ext.swift"; sourceTree = "<group>"; };
-		080CEB12617A9924FF42AE2BC83A5EC7 /* JCSwiftCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftCommon.release.xcconfig; sourceTree = "<group>"; };
+		01C94D8A70C169D85365DF8746C0768F /* JCButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCButtonStyle.swift; path = JCSwiftUIWedgets/Classes/Configure/JCButtonStyle.swift; sourceTree = "<group>"; };
+		021868D38D11B1875D266AE180571301 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		02A5893A7945BA38C30B5E8C1AA38E7A /* JCProgressRing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCProgressRing.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCProgressRing.swift; sourceTree = "<group>"; };
+		089A73C39795EA65E523AC942A9EFD04 /* JCThemeFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCThemeFont.swift; path = JCSwiftUIWedgets/Classes/Configure/JCThemeFont.swift; sourceTree = "<group>"; };
 		0930D93BA4D8E6AE9207927F8201872B /* Pods-JCSwiftRestful_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCSwiftRestful_Tests-Info.plist"; sourceTree = "<group>"; };
-		098C4F2CFEAE0A6E6CFBF1BBFDFC5D6B /* Image+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/Image+Ext.swift"; sourceTree = "<group>"; };
-		0C7AE407523E325676A1B3B0F0E144AD /* JCToggle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCToggle.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCToggle.swift; sourceTree = "<group>"; };
 		0E2F925993B0A5B449716C8827378F2D /* Pods-JCSwiftRestful_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCSwiftRestful_Example-Info.plist"; sourceTree = "<group>"; };
-		227393B3169C881BE20ACFA78C5AAB31 /* JCSwiftRestful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftRestful.release.xcconfig; sourceTree = "<group>"; };
-		255583423066C359E8519E6693644BA0 /* JCSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCSerialization.swift; path = JCSwiftCommon/Classes/Common/JCSerialization.swift; sourceTree = "<group>"; };
-		27F344CA6E00402044ECCCEDD2BA9650 /* Array+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Array+Ext.swift"; sourceTree = "<group>"; };
-		2A08755102D08D96FD3FF176120EDEB0 /* JCPageIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCPageIndicator.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCPageIndicator.swift; sourceTree = "<group>"; };
-		360ECE858729379AB7B5B70F4B3B36AE /* JCSwiftRestful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftRestful-prefix.pch"; sourceTree = "<group>"; };
+		0FE2F29A96424648FB0BE3701975455A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		110D8F06EFBCE9710596B6B5B8BAC613 /* JCLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCLoadingView.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCLoadingView.swift; sourceTree = "<group>"; };
+		13BFB98DA5E36BDE60599765A245DCAD /* Image+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/Image+Ext.swift"; sourceTree = "<group>"; };
+		14394A22E2C612EFB7A60C3AA004AACE /* JCColorPair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCColorPair.swift; path = JCSwiftUIWedgets/Classes/Configure/JCColorPair.swift; sourceTree = "<group>"; };
+		14A18CD726FAE7F99EE899B44299399A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1FDA10621F24FD2D2DE6810628B4E584 /* JCRequestCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestCenter.swift; path = JCSwiftRestful/Classes/JCRequestCenter.swift; sourceTree = "<group>"; };
+		23358C85E03E9719DD1015818909CF66 /* JCSwiftUIWedgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftUIWedgets.release.xcconfig; sourceTree = "<group>"; };
+		233D07F99E040EAAD0C2EE9D3C4BF0B0 /* JCSwiftCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftCommon-umbrella.h"; sourceTree = "<group>"; };
+		28ADAE3B46D18B8642F505D89E6765A9 /* JCSwiftRestful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftRestful.debug.xcconfig; sourceTree = "<group>"; };
+		3282A91ABBD452187B4D38C4CF2BD614 /* JCSwiftRestful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftRestful-umbrella.h"; sourceTree = "<group>"; };
 		36BCC786C0874B53CE23C2F122C65F12 /* Pods-JCSwiftRestful_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCSwiftRestful_Example.modulemap"; sourceTree = "<group>"; };
-		3D9F1E6E6FD92D42815F475AD9F60419 /* JCButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCButtonStyle.swift; path = JCSwiftUIWedgets/Classes/Configure/JCButtonStyle.swift; sourceTree = "<group>"; };
-		432F4B35C18DC5F85CCC1A91D72DA7D2 /* String+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/String+Ext.swift"; sourceTree = "<group>"; };
-		4454D489FD850C26BAEB3D012E3E4414 /* Pods_JCSwiftRestful_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCSwiftRestful_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45C83C43EF1796EB2ACEA07926E6410A /* JCRetryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRetryView.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCRetryView.swift; sourceTree = "<group>"; };
-		481F928B2FACD8DEA604B3403E35B76F /* Pods_JCSwiftRestful_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCSwiftRestful_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53C4FB5B2A006A1B17820E3B7573B888 /* JCThemeColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCThemeColor.swift; path = JCSwiftUIWedgets/Classes/Configure/JCThemeColor.swift; sourceTree = "<group>"; };
+		36EF2484F0343CBE7361464877327540 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		399D61AF90F0A4534C3D09E7D0BAB982 /* Array+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Array+Ext.swift"; sourceTree = "<group>"; };
+		3B4C263CB8C821664622B3556FBC7FAE /* JCRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestError.swift; path = JCSwiftRestful/Classes/JCRequestError.swift; sourceTree = "<group>"; };
+		3E251D4345FD333AAB41C343888D7F37 /* JCSwiftCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftCommon-dummy.m"; sourceTree = "<group>"; };
+		40DBA5CACEB90ECE9CB1B7DD55CA815C /* JCSwiftRestful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftRestful-prefix.pch"; sourceTree = "<group>"; };
+		4454D489FD850C26BAEB3D012E3E4414 /* Pods-JCSwiftRestful_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JCSwiftRestful_Tests"; path = Pods_JCSwiftRestful_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		481F928B2FACD8DEA604B3403E35B76F /* Pods-JCSwiftRestful_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JCSwiftRestful_Example"; path = Pods_JCSwiftRestful_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4302521413C96C6D1DD32E627DCA91 /* JCSwiftUIWedgets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftUIWedgets-dummy.m"; sourceTree = "<group>"; };
+		53E8F97D6EF66F85037894C684426CC6 /* JCThemeColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCThemeColor.swift; path = JCSwiftUIWedgets/Classes/Configure/JCThemeColor.swift; sourceTree = "<group>"; };
 		54B5310EDC334D954DE8FF69766B7999 /* Pods-JCSwiftRestful_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCSwiftRestful_Example-dummy.m"; sourceTree = "<group>"; };
-		59BD56EAA394586DF2091A039AD7324C /* JCColorPair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCColorPair.swift; path = JCSwiftUIWedgets/Classes/Configure/JCColorPair.swift; sourceTree = "<group>"; };
-		5A7BDBAEC005203F65B4F2A366A68090 /* JCThemeFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCThemeFont.swift; path = JCSwiftUIWedgets/Classes/Configure/JCThemeFont.swift; sourceTree = "<group>"; };
-		5BED46B7E726605C69C9B20BCAA8D148 /* JCSwiftRestful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftRestful.modulemap; sourceTree = "<group>"; };
-		5E81604E250ED9B30F2A57D08535F331 /* Thread+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Thread+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Thread+Ext.swift"; sourceTree = "<group>"; };
-		5FE7E27F229706FCAE305FD665CCB612 /* JCSwiftCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftCommon-prefix.pch"; sourceTree = "<group>"; };
-		60791EBBC059CBFACC6C454BE1AA970F /* NavigationLink+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NavigationLink+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/NavigationLink+Ext.swift"; sourceTree = "<group>"; };
-		609A3EF23FCAD17CC4C84DF0A894B8E1 /* JCMessageBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCMessageBox.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCMessageBox.swift; sourceTree = "<group>"; };
-		60DAB8C1D13AC28C7F4154009A851788 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		62CF408C3236D6C3E213F4E791A06B27 /* JCSwiftUIWedgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftUIWedgets.release.xcconfig; sourceTree = "<group>"; };
-		630AC5460257BDC220C4FBDA082EC26D /* JCProgressRing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCProgressRing.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCProgressRing.swift; sourceTree = "<group>"; };
+		5A678B1D9C2F41C5E2E7B07EB415D7C9 /* JCSwiftCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftCommon.release.xcconfig; sourceTree = "<group>"; };
+		5C474D7F0B295054C846000A29666E2F /* JCSwiftCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftCommon-prefix.pch"; sourceTree = "<group>"; };
+		5DFE54DA08687CC638F276FFF6EAC749 /* JCImagePickerSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCImagePickerSheet.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCImagePickerSheet.swift; sourceTree = "<group>"; };
+		603A2225588A6732A18E532B5A934CE6 /* JCSwiftUIWedgets.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JCSwiftUIWedgets.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		60F6B5B2A52267256B35E9D479B15765 /* JCSwiftUIWedgets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftUIWedgets-umbrella.h"; sourceTree = "<group>"; };
 		657ADFFCA6E1612225BF2F6102A1621B /* Pods-JCSwiftRestful_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCSwiftRestful_Tests.modulemap"; sourceTree = "<group>"; };
-		659EA7B0D3A43C8132441172409B7B5D /* JCSwiftUIWedgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftUIWedgets.debug.xcconfig; sourceTree = "<group>"; };
-		6643D3C7AA3A7ABBCA34B16AE5E81A26 /* Date+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Date+Ext.swift"; sourceTree = "<group>"; };
-		6710C6DCAF616BE47FB50AA12875D3F8 /* JCRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestError.swift; path = JCSwiftRestful/Classes/JCRequestError.swift; sourceTree = "<group>"; };
-		6DA2DCD07A28EE3B5EDAA03F67CD9753 /* JCSwiftCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftCommon-dummy.m"; sourceTree = "<group>"; };
+		6A5BBEB6648513FBA699685FCAA811A8 /* JCMessageBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCMessageBox.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCMessageBox.swift; sourceTree = "<group>"; };
+		6A77B9391AEFF7C7BFF1CB7E10945605 /* JCSwiftCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftCommon.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79976829DC68111088C8232CAB3BF2A2 /* View+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/View+Ext.swift"; sourceTree = "<group>"; };
-		7EA246F82971A693D3683817A3D08B8F /* JCSwiftRestful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftRestful-Info.plist"; sourceTree = "<group>"; };
-		80E4E5AD73BECF51F56A3436C13CDCD6 /* JCSwiftCommon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftCommon-Info.plist"; sourceTree = "<group>"; };
-		826FAE6B55F14E3287335B04D514EAD2 /* JCRequestCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestCenter.swift; path = JCSwiftRestful/Classes/JCRequestCenter.swift; sourceTree = "<group>"; };
-		864159D1288F2F81F1D75CCC882D3D71 /* JCSwiftRestful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftRestful-umbrella.h"; sourceTree = "<group>"; };
-		87DE6FE9D5B5DABF7A449E7407A27EA3 /* JCSwiftRestful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftRestful-dummy.m"; sourceTree = "<group>"; };
-		8867832ED5352D5B3E3B85B8387A1E27 /* JCImagePickerSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCImagePickerSheet.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCImagePickerSheet.swift; sourceTree = "<group>"; };
-		904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCSwiftUIWedgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCSwiftRestful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9321AD9E0E0E18298305C59FBD42A0E6 /* JCSwiftRestful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftRestful.debug.xcconfig; sourceTree = "<group>"; };
+		76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCSwiftCommon; path = JCSwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795E5223DEA3CA4992EC056BD9D8E6D4 /* String+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/String+Ext.swift"; sourceTree = "<group>"; };
+		799B4FC1CCB4387166327B70A4E7FFA5 /* JCSwiftRestful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftRestful.modulemap; sourceTree = "<group>"; };
+		901D4C99DC8CF8BFBEB303FC319D3A8A /* JCSwiftUIWedgets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftUIWedgets-Info.plist"; sourceTree = "<group>"; };
+		904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCSwiftUIWedgets; path = JCSwiftUIWedgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCSwiftRestful; path = JCSwiftRestful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9257054B8FA4BE8D86F5B2D5A5ACEFB8 /* JCSwiftRestful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftRestful-dummy.m"; sourceTree = "<group>"; };
 		94234D6A4A1D28E0568498A7599D1418 /* Pods-JCSwiftRestful_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCSwiftRestful_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		951132CB9A200B5F64D24C287965D6C9 /* JCSwiftCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftCommon.modulemap; sourceTree = "<group>"; };
 		984CE9002762D782CAAB16747C56A18C /* Pods-JCSwiftRestful_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCSwiftRestful_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9A391068B1D3F59B6EE8AD5B71A713AA /* JCSwiftUIWedgets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftUIWedgets-prefix.pch"; sourceTree = "<group>"; };
 		9A76686230A2525FC3FB6E630D22141B /* Pods-JCSwiftRestful_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCSwiftRestful_Tests-dummy.m"; sourceTree = "<group>"; };
+		9B92D218D953A045C4E84F093B932EF3 /* JCRetryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRetryView.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCRetryView.swift; sourceTree = "<group>"; };
+		9BA5D5C80A1176FA33837DA8EDFFB59A /* JCSwiftCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftCommon.debug.xcconfig; sourceTree = "<group>"; };
 		9BA646B53CE3800DD364F47FDFD0AC9F /* Pods-JCSwiftRestful_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCSwiftRestful_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E87EB242596E546CDE0827657A184DF /* JCSwiftUIWedgets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftUIWedgets-Info.plist"; sourceTree = "<group>"; };
-		9F13A07D171BF681A54AD08F0018043A /* JCSwiftUIWedgets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSwiftUIWedgets-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF3EA83BED0601DCDB7833B0F21B035 /* JCBundleFileLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCBundleFileLoader.swift; path = JCSwiftCommon/Classes/Common/JCBundleFileLoader.swift; sourceTree = "<group>"; };
+		9E70134ADA207D36189E1270B9D3A3F8 /* JCImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCImagePicker.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCImagePicker.swift; sourceTree = "<group>"; };
+		9E999F791EE959E03B7B67B0BA86055C /* JCSwiftCommon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftCommon-Info.plist"; sourceTree = "<group>"; };
 		9FE3531735040FE7F45F52F19DEC6E01 /* Pods-JCSwiftRestful_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCSwiftRestful_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A786C3A672492056A93B0BBBF2CE9DF0 /* Pods-JCSwiftRestful_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCSwiftRestful_Example-umbrella.h"; sourceTree = "<group>"; };
-		AAB739CC2C5CB74883BC3CE66D12A2E9 /* JCBundleFileLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCBundleFileLoader.swift; path = JCSwiftCommon/Classes/Common/JCBundleFileLoader.swift; sourceTree = "<group>"; };
 		AD1A1B18B2B6FF7E69EC808C6586E2F4 /* Pods-JCSwiftRestful_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCSwiftRestful_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AD675D945E3E4A68D8D2355B7F93398C /* JCLocalPersistent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCLocalPersistent.swift; path = JCSwiftCommon/Classes/Common/JCLocalPersistent.swift; sourceTree = "<group>"; };
-		B891E69F4102B2A27952347D46E8AA3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BAD9A31A57D185EAF71E256AEB88D059 /* JCSwiftCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftCommon-umbrella.h"; sourceTree = "<group>"; };
-		C15CD4160979FA8F80AD117BFCB3E497 /* Double+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Double+Ext.swift"; sourceTree = "<group>"; };
+		ADFA435FB9F05319315639485D8129D8 /* JCRequestData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestData.swift; path = JCSwiftRestful/Classes/JCRequestData.swift; sourceTree = "<group>"; };
+		AE1067020529A6AC59E08B60C83DE8B5 /* Thread+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Thread+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Thread+Ext.swift"; sourceTree = "<group>"; };
+		B26D4C5E93D1E2609A1C5F1B96A222C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B3EF1D8BEF37E0D08D8E134EB30E07D9 /* NavigationLink+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NavigationLink+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/NavigationLink+Ext.swift"; sourceTree = "<group>"; };
+		B4C9A52FB24957A0D2018D86846B3642 /* JCSwiftUIWedgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftUIWedgets.debug.xcconfig; sourceTree = "<group>"; };
+		B94F692823B3B67EC3FF937717C65A99 /* Color+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/Color+Ext.swift"; sourceTree = "<group>"; };
+		BBBC87A416023487AF49B38428F9E51C /* JCToggle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCToggle.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCToggle.swift; sourceTree = "<group>"; };
+		C2DB0B7FEA443EA4B20465DD299142D1 /* JCSwiftRestful.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JCSwiftRestful.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CA622E5ED15DDB9992ECA3E966DAC98C /* View+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Ext.swift"; path = "JCSwiftUIWedgets/Classes/SwiftUI+Ext/View+Ext.swift"; sourceTree = "<group>"; };
 		CC49DED3C943D9A0B4ABEA38DC8BBCD9 /* Pods-JCSwiftRestful_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCSwiftRestful_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D0209B07AAD01651F6B9A1F5F30902F5 /* JCImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCImagePicker.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCImagePicker.swift; sourceTree = "<group>"; };
-		D23EE5F80500EE6ED36A30CE57DB9616 /* JCSwiftUIWedgets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftUIWedgets.modulemap; sourceTree = "<group>"; };
+		D65D736C3E6EBD410F8A13BB77F66B9D /* JCRequestUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestUtility.swift; path = JCSwiftRestful/Classes/JCRequestUtility.swift; sourceTree = "<group>"; };
 		D829F82D196DDFBDE98F6C108E7244D8 /* Pods-JCSwiftRestful_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCSwiftRestful_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DC36D4F5A161950E62F3C41B0A49C34A /* JCSwiftUIWedgets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftUIWedgets-prefix.pch"; sourceTree = "<group>"; };
+		D94F3B9836D5A23D989ED093117187E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D95905D94B14A56D6BD369AFB0A4F983 /* Double+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Double+Ext.swift"; sourceTree = "<group>"; };
+		DCCCC84D8DBD8196F5CB35B222123046 /* JCPageIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCPageIndicator.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCPageIndicator.swift; sourceTree = "<group>"; };
 		DD184ECFC7ABD9F3B3479CE387870D0A /* Pods-JCSwiftRestful_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCSwiftRestful_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E01C8929CC48BB57513923A3EA1BA3E1 /* JCRequestUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCRequestUtility.swift; path = JCSwiftRestful/Classes/JCRequestUtility.swift; sourceTree = "<group>"; };
-		E0C0265C6C77E84CB1EB8D14C11BB2AE /* JCLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCLoadingView.swift; path = JCSwiftUIWedgets/Classes/Wedgets/JCLoadingView.swift; sourceTree = "<group>"; };
-		E68E53398373958A20162C4AB6FCC596 /* JCSwiftUIWedgets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSwiftUIWedgets-umbrella.h"; sourceTree = "<group>"; };
-		E8404D4F788BB3E66A7357B31FAE598B /* JCSwiftCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftCommon.debug.xcconfig; sourceTree = "<group>"; };
+		E2B6CE80BC5FCBD34707ECD8ED9F3CE1 /* JCLocalPersistent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCLocalPersistent.swift; path = JCSwiftCommon/Classes/Common/JCLocalPersistent.swift; sourceTree = "<group>"; };
+		E8996B9AF8999E7F767070DCA4941D29 /* JCSwiftCommon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JCSwiftCommon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EA863F89AA78305404C009C1BA4AF890 /* JCSwiftRestful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCSwiftRestful.release.xcconfig; sourceTree = "<group>"; };
+		EF52C47AE79A71A3192D64F14FEF4549 /* JCSwiftUIWedgets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JCSwiftUIWedgets.modulemap; sourceTree = "<group>"; };
+		F27B9F149D9072BC6A47F4660FC042EA /* Date+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Ext.swift"; path = "JCSwiftCommon/Classes/Foundation+Ext/Date+Ext.swift"; sourceTree = "<group>"; };
+		F385F98EE8B58992685FC6005FEEA4B4 /* JCSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JCSerialization.swift; path = JCSwiftCommon/Classes/Common/JCSerialization.swift; sourceTree = "<group>"; };
 		F5AAE7D78EBC8686BD1A59044EFCA915 /* Pods-JCSwiftRestful_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCSwiftRestful_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F61B5391D80DE03FCDC2D1D0C86C0EE6 /* Pods-JCSwiftRestful_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCSwiftRestful_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FBF5652A2AB11E8F1D673E98798DF533 /* JCSwiftRestful.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JCSwiftRestful.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FF1694849246E2BB5334456212ABE23F /* JCSwiftRestful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JCSwiftRestful-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,91 +219,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		001DF667D4BCD7A1595C8A3957A22AE2 /* Wedgets */ = {
-			isa = PBXGroup;
-			children = (
-				D0209B07AAD01651F6B9A1F5F30902F5 /* JCImagePicker.swift */,
-				8867832ED5352D5B3E3B85B8387A1E27 /* JCImagePickerSheet.swift */,
-				E0C0265C6C77E84CB1EB8D14C11BB2AE /* JCLoadingView.swift */,
-				609A3EF23FCAD17CC4C84DF0A894B8E1 /* JCMessageBox.swift */,
-				2A08755102D08D96FD3FF176120EDEB0 /* JCPageIndicator.swift */,
-				630AC5460257BDC220C4FBDA082EC26D /* JCProgressRing.swift */,
-				45C83C43EF1796EB2ACEA07926E6410A /* JCRetryView.swift */,
-				0C7AE407523E325676A1B3B0F0E144AD /* JCToggle.swift */,
-			);
-			name = Wedgets;
-			sourceTree = "<group>";
-		};
-		00C2F08C30C665A4A4A58F6A872DF506 /* Configure */ = {
-			isa = PBXGroup;
-			children = (
-				3D9F1E6E6FD92D42815F475AD9F60419 /* JCButtonStyle.swift */,
-				59BD56EAA394586DF2091A039AD7324C /* JCColorPair.swift */,
-				53C4FB5B2A006A1B17820E3B7573B888 /* JCThemeColor.swift */,
-				5A7BDBAEC005203F65B4F2A366A68090 /* JCThemeFont.swift */,
-			);
-			name = Configure;
-			sourceTree = "<group>";
-		};
-		0AB89E69063645EB30CB5F217939CFAC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D23EE5F80500EE6ED36A30CE57DB9616 /* JCSwiftUIWedgets.modulemap */,
-				9F13A07D171BF681A54AD08F0018043A /* JCSwiftUIWedgets-dummy.m */,
-				9E87EB242596E546CDE0827657A184DF /* JCSwiftUIWedgets-Info.plist */,
-				DC36D4F5A161950E62F3C41B0A49C34A /* JCSwiftUIWedgets-prefix.pch */,
-				E68E53398373958A20162C4AB6FCC596 /* JCSwiftUIWedgets-umbrella.h */,
-				659EA7B0D3A43C8132441172409B7B5D /* JCSwiftUIWedgets.debug.xcconfig */,
-				62CF408C3236D6C3E213F4E791A06B27 /* JCSwiftUIWedgets.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JCSwiftUIWedgets";
-			sourceTree = "<group>";
-		};
-		0D29D05D1B7B1906B9590D1FC98CFC22 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5E5ECC58FBF06A7DC9ABF0EFCB97326E /* JCSwiftCommon */,
-				81EA546331B64C27DCEC21E02A7C26FA /* JCSwiftUIWedgets */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		0E12E22A08F0C4E70C8527F2710FB6E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon.framework */,
-				91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful.framework */,
-				904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets.framework */,
-				481F928B2FACD8DEA604B3403E35B76F /* Pods_JCSwiftRestful_Example.framework */,
-				4454D489FD850C26BAEB3D012E3E4414 /* Pods_JCSwiftRestful_Tests.framework */,
+				76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon */,
+				91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful */,
+				904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets */,
+				481F928B2FACD8DEA604B3403E35B76F /* Pods-JCSwiftRestful_Example */,
+				4454D489FD850C26BAEB3D012E3E4414 /* Pods-JCSwiftRestful_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0FC65C38C423991246741BC86CC4E5A7 /* Common */ = {
+		37FF5878E5FC6A77DA7ADB74604780A3 /* SwiftUI+Ext */ = {
 			isa = PBXGroup;
 			children = (
-				AAB739CC2C5CB74883BC3CE66D12A2E9 /* JCBundleFileLoader.swift */,
-				AD675D945E3E4A68D8D2355B7F93398C /* JCLocalPersistent.swift */,
-				255583423066C359E8519E6693644BA0 /* JCSerialization.swift */,
+				B94F692823B3B67EC3FF937717C65A99 /* Color+Ext.swift */,
+				13BFB98DA5E36BDE60599765A245DCAD /* Image+Ext.swift */,
+				B3EF1D8BEF37E0D08D8E134EB30E07D9 /* NavigationLink+Ext.swift */,
+				CA622E5ED15DDB9992ECA3E966DAC98C /* View+Ext.swift */,
+			);
+			name = "SwiftUI+Ext";
+			sourceTree = "<group>";
+		};
+		38B0FB0BE45FBE621C7E6DCDCF59CCC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9DF3EA83BED0601DCDB7833B0F21B035 /* JCBundleFileLoader.swift */,
+				E2B6CE80BC5FCBD34707ECD8ED9F3CE1 /* JCLocalPersistent.swift */,
+				F385F98EE8B58992685FC6005FEEA4B4 /* JCSerialization.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
 		};
-		1659E45D7A71216CC20242E494CF16A6 /* Support Files */ = {
+		39564DB17FC38E1E3451767F89AEA20F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BED46B7E726605C69C9B20BCAA8D148 /* JCSwiftRestful.modulemap */,
-				87DE6FE9D5B5DABF7A449E7407A27EA3 /* JCSwiftRestful-dummy.m */,
-				7EA246F82971A693D3683817A3D08B8F /* JCSwiftRestful-Info.plist */,
-				360ECE858729379AB7B5B70F4B3B36AE /* JCSwiftRestful-prefix.pch */,
-				864159D1288F2F81F1D75CCC882D3D71 /* JCSwiftRestful-umbrella.h */,
-				9321AD9E0E0E18298305C59FBD42A0E6 /* JCSwiftRestful.debug.xcconfig */,
-				227393B3169C881BE20ACFA78C5AAB31 /* JCSwiftRestful.release.xcconfig */,
+				EF52C47AE79A71A3192D64F14FEF4549 /* JCSwiftUIWedgets.modulemap */,
+				4A4302521413C96C6D1DD32E627DCA91 /* JCSwiftUIWedgets-dummy.m */,
+				901D4C99DC8CF8BFBEB303FC319D3A8A /* JCSwiftUIWedgets-Info.plist */,
+				9A391068B1D3F59B6EE8AD5B71A713AA /* JCSwiftUIWedgets-prefix.pch */,
+				60F6B5B2A52267256B35E9D479B15765 /* JCSwiftUIWedgets-umbrella.h */,
+				B4C9A52FB24957A0D2018D86846B3642 /* JCSwiftUIWedgets.debug.xcconfig */,
+				23358C85E03E9719DD1015818909CF66 /* JCSwiftUIWedgets.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JCSwiftRestful";
+			path = "../JCSwiftRestful/Example/Pods/Target Support Files/JCSwiftUIWedgets";
 			sourceTree = "<group>";
 		};
 		50A974967197A2C16749F60D47376A25 /* Pods-JCSwiftRestful_Example */ = {
@@ -325,52 +292,113 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5E5ECC58FBF06A7DC9ABF0EFCB97326E /* JCSwiftCommon */ = {
+		5A6DA0B850506930D1F7B4549A7FA0AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FC65C38C423991246741BC86CC4E5A7 /* Common */,
-				A005AC02247725E98CE60F252BE5AA34 /* Foundation+Ext */,
-				873ECD652BE3AFF63DA8C7AD93B1601D /* Support Files */,
-			);
-			path = JCSwiftCommon;
-			sourceTree = "<group>";
-		};
-		81EA546331B64C27DCEC21E02A7C26FA /* JCSwiftUIWedgets */ = {
-			isa = PBXGroup;
-			children = (
-				00C2F08C30C665A4A4A58F6A872DF506 /* Configure */,
-				0AB89E69063645EB30CB5F217939CFAC /* Support Files */,
-				BCB779B59E2D6E2FCFD468DC8250391A /* SwiftUI+Ext */,
-				001DF667D4BCD7A1595C8A3957A22AE2 /* Wedgets */,
-			);
-			path = JCSwiftUIWedgets;
-			sourceTree = "<group>";
-		};
-		873ECD652BE3AFF63DA8C7AD93B1601D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				951132CB9A200B5F64D24C287965D6C9 /* JCSwiftCommon.modulemap */,
-				6DA2DCD07A28EE3B5EDAA03F67CD9753 /* JCSwiftCommon-dummy.m */,
-				80E4E5AD73BECF51F56A3436C13CDCD6 /* JCSwiftCommon-Info.plist */,
-				5FE7E27F229706FCAE305FD665CCB612 /* JCSwiftCommon-prefix.pch */,
-				BAD9A31A57D185EAF71E256AEB88D059 /* JCSwiftCommon-umbrella.h */,
-				E8404D4F788BB3E66A7357B31FAE598B /* JCSwiftCommon.debug.xcconfig */,
-				080CEB12617A9924FF42AE2BC83A5EC7 /* JCSwiftCommon.release.xcconfig */,
+				6A77B9391AEFF7C7BFF1CB7E10945605 /* JCSwiftCommon.modulemap */,
+				3E251D4345FD333AAB41C343888D7F37 /* JCSwiftCommon-dummy.m */,
+				9E999F791EE959E03B7B67B0BA86055C /* JCSwiftCommon-Info.plist */,
+				5C474D7F0B295054C846000A29666E2F /* JCSwiftCommon-prefix.pch */,
+				233D07F99E040EAAD0C2EE9D3C4BF0B0 /* JCSwiftCommon-umbrella.h */,
+				9BA5D5C80A1176FA33837DA8EDFFB59A /* JCSwiftCommon.debug.xcconfig */,
+				5A678B1D9C2F41C5E2E7B07EB415D7C9 /* JCSwiftCommon.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JCSwiftCommon";
+			path = "../JCSwiftRestful/Example/Pods/Target Support Files/JCSwiftCommon";
 			sourceTree = "<group>";
 		};
-		A005AC02247725E98CE60F252BE5AA34 /* Foundation+Ext */ = {
+		5FCD0FAA1FD2015FE35F96D3AA8E13A6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				27F344CA6E00402044ECCCEDD2BA9650 /* Array+Ext.swift */,
-				6643D3C7AA3A7ABBCA34B16AE5E81A26 /* Date+Ext.swift */,
-				C15CD4160979FA8F80AD117BFCB3E497 /* Double+Ext.swift */,
-				432F4B35C18DC5F85CCC1A91D72DA7D2 /* String+Ext.swift */,
-				5E81604E250ED9B30F2A57D08535F331 /* Thread+Ext.swift */,
+				E8996B9AF8999E7F767070DCA4941D29 /* JCSwiftCommon.podspec */,
+				36EF2484F0343CBE7361464877327540 /* LICENSE */,
+				021868D38D11B1875D266AE180571301 /* README.md */,
 			);
-			name = "Foundation+Ext";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		608AEC814EEF6011C2BC239C693B070A /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				01C94D8A70C169D85365DF8746C0768F /* JCButtonStyle.swift */,
+				14394A22E2C612EFB7A60C3AA004AACE /* JCColorPair.swift */,
+				53E8F97D6EF66F85037894C684426CC6 /* JCThemeColor.swift */,
+				089A73C39795EA65E523AC942A9EFD04 /* JCThemeFont.swift */,
+			);
+			name = Configure;
+			sourceTree = "<group>";
+		};
+		71EE28302205D22AA8776F1AF36C6561 /* JCSwiftUIWedgets */ = {
+			isa = PBXGroup;
+			children = (
+				608AEC814EEF6011C2BC239C693B070A /* Configure */,
+				9044273AC02CEA72D1A1F031964C2187 /* Pod */,
+				39564DB17FC38E1E3451767F89AEA20F /* Support Files */,
+				37FF5878E5FC6A77DA7ADB74604780A3 /* SwiftUI+Ext */,
+				78B8E8F69661B4857BFC0F82461C681C /* Wedgets */,
+			);
+			name = JCSwiftUIWedgets;
+			path = ../../../JCSwiftUIWedgets;
+			sourceTree = "<group>";
+		};
+		78B8E8F69661B4857BFC0F82461C681C /* Wedgets */ = {
+			isa = PBXGroup;
+			children = (
+				9E70134ADA207D36189E1270B9D3A3F8 /* JCImagePicker.swift */,
+				5DFE54DA08687CC638F276FFF6EAC749 /* JCImagePickerSheet.swift */,
+				110D8F06EFBCE9710596B6B5B8BAC613 /* JCLoadingView.swift */,
+				6A5BBEB6648513FBA699685FCAA811A8 /* JCMessageBox.swift */,
+				DCCCC84D8DBD8196F5CB35B222123046 /* JCPageIndicator.swift */,
+				02A5893A7945BA38C30B5E8C1AA38E7A /* JCProgressRing.swift */,
+				9B92D218D953A045C4E84F093B932EF3 /* JCRetryView.swift */,
+				BBBC87A416023487AF49B38428F9E51C /* JCToggle.swift */,
+			);
+			name = Wedgets;
+			sourceTree = "<group>";
+		};
+		7F554D54014910BA8CE7F033825189FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C2DB0B7FEA443EA4B20465DD299142D1 /* JCSwiftRestful.podspec */,
+				B26D4C5E93D1E2609A1C5F1B96A222C5 /* LICENSE */,
+				D94F3B9836D5A23D989ED093117187E5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9044273AC02CEA72D1A1F031964C2187 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				603A2225588A6732A18E532B5A934CE6 /* JCSwiftUIWedgets.podspec */,
+				0FE2F29A96424648FB0BE3701975455A /* LICENSE */,
+				14A18CD726FAE7F99EE899B44299399A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		905C9E4003A66C9FCC1480C920614748 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC90D408055BFCFFE8FB394EC229C603 /* JCSwiftCommon */,
+				EE4CD36CE9D70D99E5498710A741A8BE /* JCSwiftRestful */,
+				71EE28302205D22AA8776F1AF36C6561 /* JCSwiftUIWedgets */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		95BE5412B2DDB62D694F9CDE94EB373C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				799B4FC1CCB4387166327B70A4E7FFA5 /* JCSwiftRestful.modulemap */,
+				9257054B8FA4BE8D86F5B2D5A5ACEFB8 /* JCSwiftRestful-dummy.m */,
+				FF1694849246E2BB5334456212ABE23F /* JCSwiftRestful-Info.plist */,
+				40DBA5CACEB90ECE9CB1B7DD55CA815C /* JCSwiftRestful-prefix.pch */,
+				3282A91ABBD452187B4D38C4CF2BD614 /* JCSwiftRestful-umbrella.h */,
+				28ADAE3B46D18B8642F505D89E6765A9 /* JCSwiftRestful.debug.xcconfig */,
+				EA863F89AA78305404C009C1BA4AF890 /* JCSwiftRestful.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JCSwiftRestful";
 			sourceTree = "<group>";
 		};
 		A42C50B831EE5A004B5DBC2E933E6F4E /* Targets Support Files */ = {
@@ -382,34 +410,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B0E90544B707130458B8680D9BCC1E22 /* Pod */ = {
+		AC57CBDBD57A0A252DA356EC667685B6 /* Foundation+Ext */ = {
 			isa = PBXGroup;
 			children = (
-				FBF5652A2AB11E8F1D673E98798DF533 /* JCSwiftRestful.podspec */,
-				60DAB8C1D13AC28C7F4154009A851788 /* LICENSE */,
-				B891E69F4102B2A27952347D46E8AA3A /* README.md */,
+				399D61AF90F0A4534C3D09E7D0BAB982 /* Array+Ext.swift */,
+				F27B9F149D9072BC6A47F4660FC042EA /* Date+Ext.swift */,
+				D95905D94B14A56D6BD369AFB0A4F983 /* Double+Ext.swift */,
+				795E5223DEA3CA4992EC056BD9D8E6D4 /* String+Ext.swift */,
+				AE1067020529A6AC59E08B60C83DE8B5 /* Thread+Ext.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		BCB779B59E2D6E2FCFD468DC8250391A /* SwiftUI+Ext */ = {
-			isa = PBXGroup;
-			children = (
-				047C76DB5F0615432CF289B7AD9CE821 /* Color+Ext.swift */,
-				098C4F2CFEAE0A6E6CFBF1BBFDFC5D6B /* Image+Ext.swift */,
-				60791EBBC059CBFACC6C454BE1AA970F /* NavigationLink+Ext.swift */,
-				79976829DC68111088C8232CAB3BF2A2 /* View+Ext.swift */,
-			);
-			name = "SwiftUI+Ext";
+			name = "Foundation+Ext";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DC1547DB0EEA9606263830A35E8C1DE4 /* Development Pods */,
+				905C9E4003A66C9FCC1480C920614748 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0D29D05D1B7B1906B9590D1FC98CFC22 /* Pods */,
 				0E12E22A08F0C4E70C8527F2710FB6E6 /* Products */,
 				A42C50B831EE5A004B5DBC2E933E6F4E /* Targets Support Files */,
 			);
@@ -439,26 +457,30 @@
 			path = "Target Support Files/Pods-JCSwiftRestful_Tests";
 			sourceTree = "<group>";
 		};
-		DC1547DB0EEA9606263830A35E8C1DE4 /* Development Pods */ = {
+		EE4CD36CE9D70D99E5498710A741A8BE /* JCSwiftRestful */ = {
 			isa = PBXGroup;
 			children = (
-				DD2C45BEBD203147E87098F90BFA74DC /* JCSwiftRestful */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DD2C45BEBD203147E87098F90BFA74DC /* JCSwiftRestful */ = {
-			isa = PBXGroup;
-			children = (
-				826FAE6B55F14E3287335B04D514EAD2 /* JCRequestCenter.swift */,
-				02CFB5DA94C297F4F647E58FBF73B177 /* JCRequestData.swift */,
-				6710C6DCAF616BE47FB50AA12875D3F8 /* JCRequestError.swift */,
-				E01C8929CC48BB57513923A3EA1BA3E1 /* JCRequestUtility.swift */,
-				B0E90544B707130458B8680D9BCC1E22 /* Pod */,
-				1659E45D7A71216CC20242E494CF16A6 /* Support Files */,
+				1FDA10621F24FD2D2DE6810628B4E584 /* JCRequestCenter.swift */,
+				ADFA435FB9F05319315639485D8129D8 /* JCRequestData.swift */,
+				3B4C263CB8C821664622B3556FBC7FAE /* JCRequestError.swift */,
+				D65D736C3E6EBD410F8A13BB77F66B9D /* JCRequestUtility.swift */,
+				7F554D54014910BA8CE7F033825189FF /* Pod */,
+				95BE5412B2DDB62D694F9CDE94EB373C /* Support Files */,
 			);
 			name = JCSwiftRestful;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		FC90D408055BFCFFE8FB394EC229C603 /* JCSwiftCommon */ = {
+			isa = PBXGroup;
+			children = (
+				38B0FB0BE45FBE621C7E6DCDCF59CCC8 /* Common */,
+				AC57CBDBD57A0A252DA356EC667685B6 /* Foundation+Ext */,
+				5FCD0FAA1FD2015FE35F96D3AA8E13A6 /* Pod */,
+				5A6DA0B850506930D1F7B4549A7FA0AB /* Support Files */,
+			);
+			name = JCSwiftCommon;
+			path = ../../../JCSwiftCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,13 +541,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8B1F5618D5A9F4D318B5CCDDDA30450 /* PBXTargetDependency */,
-				9131644A4D2D93F274C5DB5EC9707404 /* PBXTargetDependency */,
-				79C455199C4CE2C8F6438C8B1303537D /* PBXTargetDependency */,
+				1089A7EED0718535C5AC0F056A5FCF58 /* PBXTargetDependency */,
+				7670C885765207390C9CFB5BC2E4890C /* PBXTargetDependency */,
+				639F34CCC288FAFA83B2229CE614C4DD /* PBXTargetDependency */,
 			);
 			name = "Pods-JCSwiftRestful_Example";
 			productName = Pods_JCSwiftRestful_Example;
-			productReference = 481F928B2FACD8DEA604B3403E35B76F /* Pods_JCSwiftRestful_Example.framework */;
+			productReference = 481F928B2FACD8DEA604B3403E35B76F /* Pods-JCSwiftRestful_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		1BDD88BC24CF061134804ACCAC69C9D7 /* Pods-JCSwiftRestful_Tests */ = {
@@ -540,11 +562,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				C948E8FAE5AB8A470A4EAB8A243F81E3 /* PBXTargetDependency */,
+				1606B1FC05ED42E2DD2A37B8FD3C9EE5 /* PBXTargetDependency */,
 			);
 			name = "Pods-JCSwiftRestful_Tests";
 			productName = Pods_JCSwiftRestful_Tests;
-			productReference = 4454D489FD850C26BAEB3D012E3E4414 /* Pods_JCSwiftRestful_Tests.framework */;
+			productReference = 4454D489FD850C26BAEB3D012E3E4414 /* Pods-JCSwiftRestful_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		B5210700916B1C7BADE73B65BDF8E34E /* JCSwiftCommon */ = {
@@ -562,7 +584,7 @@
 			);
 			name = JCSwiftCommon;
 			productName = JCSwiftCommon;
-			productReference = 76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon.framework */;
+			productReference = 76DD46A60259B1BEB7503D6D9424CDC6 /* JCSwiftCommon */;
 			productType = "com.apple.product-type.framework";
 		};
 		E41C71EFFCDE416C98AB6249D1AD1401 /* JCSwiftRestful */ = {
@@ -577,11 +599,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2D4256F71373C50211543025D2603229 /* PBXTargetDependency */,
+				66AD9AE8660D321C5726FF3E3F22FF67 /* PBXTargetDependency */,
 			);
 			name = JCSwiftRestful;
 			productName = JCSwiftRestful;
-			productReference = 91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful.framework */;
+			productReference = 91CE6BD79B70B57873E431656B73EF1B /* JCSwiftRestful */;
 			productType = "com.apple.product-type.framework";
 		};
 		F80A9AFA3DB2692489E0D0C068371124 /* JCSwiftUIWedgets */ = {
@@ -599,7 +621,7 @@
 			);
 			name = JCSwiftUIWedgets;
 			productName = JCSwiftUIWedgets;
-			productReference = 904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets.framework */;
+			productReference = 904E3A194CEFA4829A5E27EBA2E4BCF9 /* JCSwiftUIWedgets */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -608,9 +630,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 12.0";
@@ -744,35 +765,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D4256F71373C50211543025D2603229 /* PBXTargetDependency */ = {
+		1089A7EED0718535C5AC0F056A5FCF58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JCSwiftCommon;
 			target = B5210700916B1C7BADE73B65BDF8E34E /* JCSwiftCommon */;
-			targetProxy = BF1CE30F1B1BEB2E7CAD4BE43490E393 /* PBXContainerItemProxy */;
+			targetProxy = 16C725A410B203D4B535BE1367C9FADE /* PBXContainerItemProxy */;
 		};
-		79C455199C4CE2C8F6438C8B1303537D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JCSwiftUIWedgets;
-			target = F80A9AFA3DB2692489E0D0C068371124 /* JCSwiftUIWedgets */;
-			targetProxy = F1741F73FED583577C45A99956433542 /* PBXContainerItemProxy */;
-		};
-		9131644A4D2D93F274C5DB5EC9707404 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JCSwiftRestful;
-			target = E41C71EFFCDE416C98AB6249D1AD1401 /* JCSwiftRestful */;
-			targetProxy = 3DE4B24337CFA13B946BC09CD375D1E7 /* PBXContainerItemProxy */;
-		};
-		C948E8FAE5AB8A470A4EAB8A243F81E3 /* PBXTargetDependency */ = {
+		1606B1FC05ED42E2DD2A37B8FD3C9EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JCSwiftRestful_Example";
 			target = 0C72E26E7EDAA6CD16A3B77F2353BF3F /* Pods-JCSwiftRestful_Example */;
-			targetProxy = 8400F28E07D59B4508D4ABFDA2EEABE9 /* PBXContainerItemProxy */;
+			targetProxy = 63A28523C7F47EFE7009628815AE84BB /* PBXContainerItemProxy */;
 		};
-		E8B1F5618D5A9F4D318B5CCDDDA30450 /* PBXTargetDependency */ = {
+		639F34CCC288FAFA83B2229CE614C4DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCSwiftUIWedgets;
+			target = F80A9AFA3DB2692489E0D0C068371124 /* JCSwiftUIWedgets */;
+			targetProxy = 883A51C09C46EC1DF778577CCE68AC3E /* PBXContainerItemProxy */;
+		};
+		66AD9AE8660D321C5726FF3E3F22FF67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JCSwiftCommon;
 			target = B5210700916B1C7BADE73B65BDF8E34E /* JCSwiftCommon */;
-			targetProxy = 099C32BD6A7C38EA0EBFDDDBA7719C4C /* PBXContainerItemProxy */;
+			targetProxy = FD1FF2664B588FD39A646818227D30A6 /* PBXContainerItemProxy */;
+		};
+		7670C885765207390C9CFB5BC2E4890C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCSwiftRestful;
+			target = E41C71EFFCDE416C98AB6249D1AD1401 /* JCSwiftRestful */;
+			targetProxy = D701492EE98D48A25D8723F94051C6F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -783,13 +804,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -800,7 +822,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -820,13 +841,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -837,7 +859,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -854,16 +875,17 @@
 		};
 		4BD4B50636ED036280337A689B685D56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9321AD9E0E0E18298305C59FBD42A0E6 /* JCSwiftRestful.debug.xcconfig */;
+			baseConfigurationReference = 28ADAE3B46D18B8642F505D89E6765A9 /* JCSwiftRestful.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftRestful/JCSwiftRestful-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftRestful/JCSwiftRestful-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -874,7 +896,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftRestful/JCSwiftRestful.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftRestful;
 				PRODUCT_NAME = JCSwiftRestful;
 				SDKROOT = iphoneos;
@@ -889,16 +910,17 @@
 		};
 		506BF6D6F0D8BC2334C6325B7395771F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 227393B3169C881BE20ACFA78C5AAB31 /* JCSwiftRestful.release.xcconfig */;
+			baseConfigurationReference = EA863F89AA78305404C009C1BA4AF890 /* JCSwiftRestful.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftRestful/JCSwiftRestful-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftRestful/JCSwiftRestful-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -909,7 +931,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftRestful/JCSwiftRestful.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftRestful;
 				PRODUCT_NAME = JCSwiftRestful;
 				SDKROOT = iphoneos;
@@ -925,16 +946,17 @@
 		};
 		51DBA1BB37D3C170F95F79F388C1B988 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62CF408C3236D6C3E213F4E791A06B27 /* JCSwiftUIWedgets.release.xcconfig */;
+			baseConfigurationReference = 23358C85E03E9719DD1015818909CF66 /* JCSwiftUIWedgets.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -945,7 +967,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftUIWedgets;
 				PRODUCT_NAME = JCSwiftUIWedgets;
 				SDKROOT = iphoneos;
@@ -961,16 +982,17 @@
 		};
 		5A726F5F997FB553C1E3AAAAFB108B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 659EA7B0D3A43C8132441172409B7B5D /* JCSwiftUIWedgets.debug.xcconfig */;
+			baseConfigurationReference = B4C9A52FB24957A0D2018D86846B3642 /* JCSwiftUIWedgets.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -981,7 +1003,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftUIWedgets/JCSwiftUIWedgets.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftUIWedgets;
 				PRODUCT_NAME = JCSwiftUIWedgets;
 				SDKROOT = iphoneos;
@@ -1029,11 +1050,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1054,6 +1073,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1063,16 +1083,17 @@
 		};
 		928AFBA96F5A3F0796979DF4B1B40E72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 080CEB12617A9924FF42AE2BC83A5EC7 /* JCSwiftCommon.release.xcconfig */;
+			baseConfigurationReference = 5A678B1D9C2F41C5E2E7B07EB415D7C9 /* JCSwiftCommon.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftCommon/JCSwiftCommon-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftCommon/JCSwiftCommon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1083,7 +1104,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftCommon/JCSwiftCommon.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftCommon;
 				PRODUCT_NAME = JCSwiftCommon;
 				SDKROOT = iphoneos;
@@ -1132,11 +1152,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1153,6 +1171,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -1166,13 +1185,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1183,7 +1203,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1203,13 +1222,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1220,7 +1240,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1237,16 +1256,17 @@
 		};
 		BF30BBB5EE6C6F6D69664FBE25AA7EA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8404D4F788BB3E66A7357B31FAE598B /* JCSwiftCommon.debug.xcconfig */;
+			baseConfigurationReference = 9BA5D5C80A1176FA33837DA8EDFFB59A /* JCSwiftCommon.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JCSwiftCommon/JCSwiftCommon-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JCSwiftCommon/JCSwiftCommon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1257,7 +1277,6 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/JCSwiftCommon/JCSwiftCommon.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = JCSwiftCommon;
 				PRODUCT_NAME = JCSwiftCommon;
 				SDKROOT = iphoneos;

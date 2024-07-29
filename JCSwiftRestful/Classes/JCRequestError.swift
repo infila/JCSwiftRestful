@@ -24,6 +24,11 @@ public struct JCRequestError: Error, Codable {
   public var description: String {
     return "Error code: \(errorCode), \nReason: \(reason ?? "Unknown reason")"
   }
+
+  public init(errorCode: Int, reason: String? = nil) {
+    self.errorCode = errorCode
+    self.reason = reason
+  }
 }
 
 private extension JCRequestError {
