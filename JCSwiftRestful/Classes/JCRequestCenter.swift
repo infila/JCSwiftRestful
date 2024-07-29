@@ -26,6 +26,7 @@ public final class JCRequestCenter {
   public var invokeClosureOnMainThread = true
   public var consoleLogEnable = true
   public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
+  public var successStatusCode = (200 ... 299)
 
   /// Will be called before send request. Do any encryption processing if you like.
   public var encryptClosure: ((Data) -> (Data))?
@@ -242,7 +243,7 @@ private extension JCRequestCenter {
       return
     }
 
-    if (200 ... 299).contains(response.statusCode) {
+    if successStatusCode.contains(response.statusCode) {
       if invokeClosureOnMainThread {
         Thread.mainThreadExecute {
           onSuccess(request, responseBody)

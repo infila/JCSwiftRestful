@@ -18,8 +18,72 @@ Here are three frameworks for junior developers. They can help you increase deve
 ## Example
 
 <!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-Example application is still developing. Instead, read the TestCase code in Tests folder can help.
-I'll write some example code here later. Thanks for waiting.
+To use JCSwiftRestful, the HTTP response **MUST** adhere to standard RESTful formats. Which means: when the status code is 200, the responseData must follow a single data format, and 5XX codes should be used to indicate parameter errors or other issues. [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 
+
+For example, if an API returns:
+```ruby
+{statusCode: 200, responseData: [Person]}
+```
+And in any other case with different parameters sent from client, this API **SHOULD NOT** returns like:
+```ruby
+{statusCode: 200, responseData: Person}
+
+{statusCode: 200, responseData: { errorMsg: "Parameter is incorrect" }}
+```
+
+###3 steps to get results from a RESTful API:
+ 
+*Step 1: Have a default implementation for JCRequestData, which is a protocol
+ ```ruby
+ extension JCRequestData {
+  var method: JCHttpMethod {
+    return .get
+  }
+
+  var parameter: Codable? {
+    return nil
+  }
+
+  var header: [String: String] {
+    var header = [String: String]()
+    header["Accept"] = "application/json, text/plain, */*"
+    header["Accept-Language"] = "en-US,en;q=0.9"
+    header["Content-Type"] = "application/json"
+    header["source"] = "iOS"
+//    if let token = UserManager.shared.userToken, token.count != 0 {
+//      header["Authorization"] = "userToken"
+//    }
+    return header
+  }
+}
+```
+*Step 2: Looking at the json string in response and translate to a Swift Struct/Class
+```ruby
+$ curl http://ip.jsontest.com
+{"ip": "24.84.236.255"}
+```
+
+Translate to (Here I name it as IpTestRequestData, and it's' response only have one property is "ip" as a String):
+```ruby
+private struct IpTestRequestData: JCRequestData {
+  struct Response: Codable {
+    var ip: String
+  }
+
+  var apiPath: String {
+    "http://ip.jsontest.com"
+  }
+}
+```
+
+*Step 3: Send request and get result
+```ruby
+Task {
+    let result = try? await JCRequestCenter.shared.sendRequest(IpTestRequestData(), decodeType: IpTestRequestData.Response.self)
+    print(result?.ip ?? "Error")
+}
+```
+
 
 ## Requirements
 
