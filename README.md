@@ -18,20 +18,7 @@ Here are three frameworks for junior developers. They can help you increase deve
 ## Example
 
 <!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-To use JCSwiftRestful, the HTTP response **MUST** adhere to standard RESTful formats. Which means: when the status code is 200, the responseData must follow a single data format, and 5XX codes should be used to indicate parameter errors or other issues. [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 
-
-For example, if an API returns:
-```ruby
-{statusCode: 200, responseData: [Person]}
-```
-And in any other case with different parameters sent from client, this API **SHOULD NOT** returns like:
-```ruby
-{statusCode: 200, responseData: Person}
-
-{statusCode: 200, responseData: { errorMsg: "Parameter is incorrect" }}
-```
-
-###3 steps to get results from a RESTful API:
+**3 steps to get results from a RESTful API:**
  
 *Step 1: Have a default implementation for JCRequestData, which is a protocol
  ```ruby
@@ -88,6 +75,20 @@ Task {
 ## Requirements
 
 iOS Deployment Target >= 13.0 
+
+To use JCSwiftRestful, the HTTP response **MUST** adhere to standard RESTful formats. Which means: when the status code is 200, the responseData must follow a single data format, and 5XX codes should be used to indicate parameter errors or other issues. [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 
+
+For example, if an API returns like:
+```ruby
+{statusCode: 200, responseData: [Person]}
+```
+And in any other cases with different parameters sent from client, this API **SHOULD NOT** returns like:
+```ruby
+{statusCode: 200, responseData: Person}
+
+{statusCode: 200, responseData: { errorMsg: "Parameter is incorrect" }}
+```
+
 
 ## Installation
 
