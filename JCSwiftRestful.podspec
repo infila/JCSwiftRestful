@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = "This framework is for Restful APIs. It helps you focus more on handling object-oriented and structured data. To use this framework, you will have to write code using more standard RESTful semantics, both on iOS and server sides. Otherwise, the automatic serialization and deserialization functions within this framework will not work."
 
-  s.homepage         = 'https://github.com/James/JCSwiftRestful.git'
+  s.homepage         = 'https://github.com/infila/JCSwiftRestful'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'James' => 'infilachen@gmail.com', 'Fanny' => 'fanfan.feng9@gmail.com'}
   s.source           = { :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '1.0.3' }
