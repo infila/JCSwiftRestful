@@ -1,5 +1,5 @@
 //
-//  IpHistoryView.swift
+//  RateHistoryView.swift
 //  JCSwiftRestful_Example
 //
 //  Created by James Chen on 2024-07-29.
@@ -9,46 +9,46 @@
 import JCSwiftUIWedgets
 import SwiftUI
 
-struct IpHistoryCell: View {
+struct RateHistoryCell: View {
   @State var date: String
-  @State var ip: String
+  @State var rate: Double
 
   var body: some View {
     HStack {
       Text(date)
-        .foregroundColor(JCThemeColor.shared.textSecondary)
+        .foregroundColor(JCThemeColor.textSecondary)
         .padding()
       Spacer()
-      Text(ip)
-        .foregroundColor(JCThemeColor.shared.textPrimary)
-        .font(JCThemeFont.shared.L)
+      Text(String(rate))
+        .foregroundColor(JCThemeColor.textPrimary)
+        .font(JCThemeFont.L)
         .padding()
     }
   }
 }
 
-struct IpHistoryView: View {
-  @State var historyEntities: [IpEntity] = []
+struct RateHistoryView: View {
+  @State var historyEntities: [ExchangeRateEntity] = []
 
   var body: some View {
     VStack {
       ForEach(historyEntities, id: \.dateString) { entity in
-        IpHistoryCell(date: entity.dateString, ip: entity.IP)
+        RateHistoryCell(date: entity.dateString, rate: entity.rate)
       }
       Spacer()
       HStack {
         Image(systemName: "trash")
         Text("Delete")
       }.buttonWrapped {
-        IpEntity.clear()
-        historyEntities = [IpEntity].load()
+        ExchangeRateEntity.clear()
+        historyEntities = [ExchangeRateEntity].load()
       }.buttonStyle(MyButtonStyle.delete)
     }.onAppear {
-      historyEntities = [IpEntity].load()
+      historyEntities = [ExchangeRateEntity].load()
     }
   }
 }
 
 #Preview {
-  IpHistoryView()
+  RateHistoryView()
 }

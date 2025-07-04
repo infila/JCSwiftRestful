@@ -15,16 +15,19 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F20696ED2C49C10C00F8BF8D /* JCRequestDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */; };
 		F22D3E3B2C542D1A00C00D3C /* JCRequestData+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3A2C542D1A00C00D3C /* JCRequestData+Default.swift */; };
-		F22D3E3D2C54681600C00D3C /* TestIpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3C2C54681600C00D3C /* TestIpView.swift */; };
+		F22D3E3D2C54681600C00D3C /* TestCurrencyRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3C2C54681600C00D3C /* TestCurrencyRateView.swift */; };
 		F22D3E3F2C546A8A00C00D3C /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3E2C546A8A00C00D3C /* ViewRouter.swift */; };
 		F257FBBE2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257FBBD2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift */; };
 		F257FBC02C3CDC64002A62D7 /* PersonDemo.json in Resources */ = {isa = PBXBuildFile; fileRef = F257FBBF2C3CDC64002A62D7 /* PersonDemo.json */; };
 		F257FBC22C3CDC85002A62D7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257FBC12C3CDC85002A62D7 /* Person.swift */; };
 		F257FBC32C3CDD84002A62D7 /* PersonDemo.json in Resources */ = {isa = PBXBuildFile; fileRef = F257FBBF2C3CDC64002A62D7 /* PersonDemo.json */; };
 		F257FBC42C3CDD89002A62D7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257FBC12C3CDC85002A62D7 /* Person.swift */; };
-		F2676C962C5813C400E98FB7 /* IpHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2676C952C5813C400E98FB7 /* IpHistoryView.swift */; };
+		F2676C962C5813C400E98FB7 /* RateHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2676C952C5813C400E98FB7 /* RateHistoryView.swift */; };
 		F2676C992C5815EC00E98FB7 /* MyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2676C982C5815EC00E98FB7 /* MyButtonStyle.swift */; };
 		F2A8ED732C38C81100A6660F /* JCLocalPersistentTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8ED722C38C81100A6660F /* JCLocalPersistentTestCase.swift */; };
+		F2C066362E171561004B58FF /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C066352E17155C004B58FF /* LoginManager.swift */; };
+		F2C066392E173EB3004B58FF /* CurrencyTestRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C066382E173EB2004B58FF /* CurrencyTestRequestData.swift */; };
+		F2C0663B2E173F22004B58FF /* GetUserInfoRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0663A2E173EE9004B58FF /* GetUserInfoRequestData.swift */; };
 		F2E50A612C35F49F0096572E /* JCRequestCenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */; };
 		F2E50A632C35F4CC0096572E /* JCRequestUtilityTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */; };
 		F2E50A652C35F4FB0096572E /* JCRequestErrorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */; };
@@ -61,14 +64,17 @@
 		EF86525268AE3B817389E8E2 /* Pods-JCSwiftRestful_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSwiftRestful_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestDataTestCase.swift; sourceTree = "<group>"; };
 		F22D3E3A2C542D1A00C00D3C /* JCRequestData+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JCRequestData+Default.swift"; sourceTree = "<group>"; };
-		F22D3E3C2C54681600C00D3C /* TestIpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIpView.swift; sourceTree = "<group>"; };
+		F22D3E3C2C54681600C00D3C /* TestCurrencyRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrencyRateView.swift; sourceTree = "<group>"; };
 		F22D3E3E2C546A8A00C00D3C /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		F257FBBD2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBundleFileLoaderTestCase.swift; sourceTree = "<group>"; };
 		F257FBBF2C3CDC64002A62D7 /* PersonDemo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PersonDemo.json; sourceTree = "<group>"; };
 		F257FBC12C3CDC85002A62D7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		F2676C952C5813C400E98FB7 /* IpHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpHistoryView.swift; sourceTree = "<group>"; };
+		F2676C952C5813C400E98FB7 /* RateHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoryView.swift; sourceTree = "<group>"; };
 		F2676C982C5815EC00E98FB7 /* MyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonStyle.swift; sourceTree = "<group>"; };
 		F2A8ED722C38C81100A6660F /* JCLocalPersistentTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLocalPersistentTestCase.swift; sourceTree = "<group>"; };
+		F2C066352E17155C004B58FF /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		F2C066382E173EB2004B58FF /* CurrencyTestRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTestRequestData.swift; sourceTree = "<group>"; };
+		F2C0663A2E173EE9004B58FF /* GetUserInfoRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoRequestData.swift; sourceTree = "<group>"; };
 		F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestCenterTestCase.swift; sourceTree = "<group>"; };
 		F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestUtilityTestCase.swift; sourceTree = "<group>"; };
 		F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestErrorTestCase.swift; sourceTree = "<group>"; };
@@ -122,11 +128,13 @@
 		607FACD21AFB9204008FA782 /* Example for JCSwiftRestful */ = {
 			isa = PBXGroup;
 			children = (
+				F2C066372E173EA7004B58FF /* RequestData */,
+				F2C066342E17154C004B58FF /* Managers */,
 				F2676C972C5815AC00E98FB7 /* UIConfig */,
 				F22D3E402C546B4900C00D3C /* NetworkConfig */,
 				F22D3E3E2C546A8A00C00D3C /* ViewRouter.swift */,
-				F22D3E3C2C54681600C00D3C /* TestIpView.swift */,
-				F2676C952C5813C400E98FB7 /* IpHistoryView.swift */,
+				F22D3E3C2C54681600C00D3C /* TestCurrencyRateView.swift */,
+				F2676C952C5813C400E98FB7 /* RateHistoryView.swift */,
 				607FACD51AFB9204008FA782 /* DemoApp.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,6 +223,23 @@
 				F2676C982C5815EC00E98FB7 /* MyButtonStyle.swift */,
 			);
 			name = UIConfig;
+			sourceTree = "<group>";
+		};
+		F2C066342E17154C004B58FF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F2C066352E17155C004B58FF /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F2C066372E173EA7004B58FF /* RequestData */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0663A2E173EE9004B58FF /* GetUserInfoRequestData.swift */,
+				F2C066382E173EB2004B58FF /* CurrencyTestRequestData.swift */,
+			);
+			path = RequestData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,13 +419,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2676C962C5813C400E98FB7 /* IpHistoryView.swift in Sources */,
+				F2676C962C5813C400E98FB7 /* RateHistoryView.swift in Sources */,
+				F2C066362E171561004B58FF /* LoginManager.swift in Sources */,
 				F22D3E3F2C546A8A00C00D3C /* ViewRouter.swift in Sources */,
+				F2C0663B2E173F22004B58FF /* GetUserInfoRequestData.swift in Sources */,
 				F257FBC42C3CDD89002A62D7 /* Person.swift in Sources */,
 				F2676C992C5815EC00E98FB7 /* MyButtonStyle.swift in Sources */,
 				F22D3E3B2C542D1A00C00D3C /* JCRequestData+Default.swift in Sources */,
-				F22D3E3D2C54681600C00D3C /* TestIpView.swift in Sources */,
+				F22D3E3D2C54681600C00D3C /* TestCurrencyRateView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* DemoApp.swift in Sources */,
+				F2C066392E173EB3004B58FF /* CurrencyTestRequestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

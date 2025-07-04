@@ -18,7 +18,7 @@ struct MyButtonStyle {
                                                                              highlight: Color.blue.opacity(0.9))])
   static let delete = JCButtonStyle.FixedSizeRounded(width: 100,
                                                      height: 40,
-                                                     textFont: JCThemeFont.shared.M,
+                                                     textFont: JCThemeFont.M,
                                                      textColor: JCColorPair(normal: .white, highlight: .white),
                                                      backgroundColor: JCColorPair(normal: .red, highlight: .red.opacity(0.6)), strokeColor: JCColorPair(normal: .red, highlight: .red))
 }

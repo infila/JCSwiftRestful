@@ -12,6 +12,6 @@ struct ViewRouter {
   static let shared = ViewRouter()
 
   var currentView: some View {
-    TestIpView()
+    TestCurrencyRateView()
   }
 }

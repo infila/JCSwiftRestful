@@ -16,9 +16,11 @@ public final class JCRequestCenter {
 
   public static let shared = JCRequestCenter()
   public var timeoutInterval: TimeInterval = 15
-  /// Full path url = domainUrl + JCRequestData.apiPath
-  /// Set domainUrl like "www.x.com" and (some JCRequestData).apiPath = "/i/flow/password_reset" is recommanded
+
+  /// if (JCRequestData.apiPath.starts(with: "http")), { url = JCRequestData.apiPath }
+  /// else { url = domainUrl + JCRequestData.apiPath }
   public var domainUrl: String = ""
+
   /// Any Callback after getting Response from server, like ResponseOnSuccess(), will invoked on main thread
   /// if invokeClosureOnMainThread = true.
   /// So that it's safe for you to update UI in those closures.
@@ -27,6 +29,7 @@ public final class JCRequestCenter {
   public var consoleLogEnable = true
   public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
   public var successStatusCode = (200 ... 299)
+  public var specialHandler: [(condition: (_ statusCode: Int, _ error: JCRequestError) -> Bool, completion: () -> Void)] = []
 
   /// Will be called before send request. Do any encryption processing if you like.
   public var encryptClosure: ((Data) -> (Data))?
@@ -252,22 +255,21 @@ private extension JCRequestCenter {
         onSuccess(request, responseBody)
       }
     } else {
-      if let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) {
-        if invokeClosureOnMainThread {
-          Thread.mainThreadExecute {
-            onApiError(request, JCRequestError(errorCode: apiError.errorCode, reason: apiError.reason))
-          }
-        } else {
-          onApiError(request, JCRequestError(errorCode: apiError.errorCode, reason: apiError.reason))
+      // special handler
+      let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) ?? JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8))
+      for (condition, completion) in specialHandler {
+        if condition(response.statusCode, apiError) {
+          completion()
+          return
+        }
+      }
+      // common handler
+      if invokeClosureOnMainThread {
+        Thread.mainThreadExecute {
+          onApiError(request, apiError)
         }
       } else {
-        if invokeClosureOnMainThread {
-          Thread.mainThreadExecute {
-            onApiError(request, JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8)))
-          }
-        } else {
-          onApiError(request, JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8)))
-        }
+        onApiError(request, apiError)
       }
     }
   }
@@ -282,17 +284,17 @@ private extension JCRequestCenter {
       return result
     }
 
-    if (200 ... 299).contains(response.statusCode) {
+    if successStatusCode.contains(response.statusCode) {
       result.responseData = responseBody
-      result.error = nil
     } else {
-      if let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) {
-        result.responseData = nil
-        result.error = JCRequestError(errorCode: apiError.errorCode, reason: apiError.reason)
-      } else {
-        result.responseData = nil
-        result.error = JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8))
+      let apiError = JCSerialization.decode(from: responseBody, decodeType: JCRequestError.self) ?? JCRequestError(errorCode: response.statusCode, reason: String(data: responseBody, encoding: .utf8))
+      for (condition, completion) in specialHandler {
+        if condition(response.statusCode, apiError) {
+          completion()
+          return result
+        }
       }
+      result.error = apiError
     }
     return result
   }
