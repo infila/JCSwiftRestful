@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCSwiftRestful'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A framework helps you pretty easy to implement as RESTful API style'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/infila/JCSwiftRestful'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'James' => 'infilachen@gmail.com', 'Fanny' => 'fanfan.feng9@gmail.com'}
-  s.source           = { :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '1.0.3' }
+  s.source           = { :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '1.0.4' }
   s.social_media_url = 'https://www.linkedin.com/in/jameschen5428'
 
   s.ios.deployment_target = '13.0'
