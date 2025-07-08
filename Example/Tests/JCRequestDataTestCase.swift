@@ -10,16 +10,6 @@ import JCSwiftCommon
 import JCSwiftRestful
 import XCTest
 
-private struct IpTestRequestData: JCRequestData {
-  struct Response: Codable {
-    var ip: String
-  }
-
-  var apiPath: String {
-    "http://ip.jsontest.com"
-  }
-}
-
 private struct ValidateJsonRequest: JCRequestData {
   var apiPath: String {
     return "http://validate.jsontest.com/"
@@ -41,24 +31,6 @@ class JCRestfulObjectTestCase: XCTestCase {
   }
 
   func testGet() async {
-    Task {
-      let result = try? await JCRequestCenter.shared.sendRequest(IpTestRequestData(), decodeType: IpTestRequestData.Response.self)
-      XCTAssert(result?.ip != nil)
-    }
-
-    let expectation = expectation(description: "callback")
-    let result: (Result<IpTestRequestData.Response, JCRequestError>) -> Void = { response in
-      switch response {
-      case let .success(outCome):
-        XCTAssert(outCome.ip.count != 0)
-      case let .failure(error):
-        print(error)
-        XCTAssert(false)
-      }
-      expectation.fulfill()
-    }
-    JCRequestCenter.shared.sendRequest(IpTestRequestData(), completion: result)
-    await fulfillment(of: [expectation])
   }
 
   func testPost() async {

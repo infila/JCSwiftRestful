@@ -9,8 +9,9 @@
 final class LoginManager {
   static let shared = LoginManager()
 
-  func login() {
+  func login() async -> Bool {
     print("LoginManager login")
+    return true
   }
 
   private init() {}
