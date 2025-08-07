@@ -15,6 +15,10 @@ private struct ValidateJsonRequest: JCRequestData {
     return "http://validate.jsontest.com/"
   }
 
+  var method: JCHttpMethod {
+    .post
+  }
+
   var parameter: Codable?
 }
 
@@ -26,18 +30,20 @@ private struct ValidateJsonResponse: Codable {
 }
 
 class JCRestfulObjectTestCase: XCTestCase {
-  override func setUp() {
-    super.setUp()
+  override func invokeTest() {
+    testPost()
   }
 
-  func testGet() async {
+  func testGet() {
   }
 
-  func testPost() async {
-    do {
-      let request = ValidateJsonRequest(parameter: Person(name: "A", age: 18, children: nil))
-      let result = try? await JCRequestCenter.shared.sendRequest(request, decodeType: ValidateJsonResponse.self)
-      XCTAssert(result?.validate == true)
+  func testPost() {
+    Task {
+      do {
+        let request = ValidateJsonRequest(parameter: Person(name: "A", age: 18, children: nil))
+        let result = try? await JCRequestCenter.shared.sendRequest(request, decodeType: ValidateJsonResponse.self)
+        XCTAssert(result?.validate == true)
+      }
     }
   }
 }

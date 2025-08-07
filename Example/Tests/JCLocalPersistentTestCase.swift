@@ -10,6 +10,10 @@ import JCSwiftCommon
 import XCTest
 
 class JCLocalPersistentTestCase: XCTestCase {
+    override func invokeTest() {
+      testExample()
+    }
+    
   func testExample() {
     Person.clear()
     let allFileAmount = JCLocalPersistent.shared.allFileNames().count

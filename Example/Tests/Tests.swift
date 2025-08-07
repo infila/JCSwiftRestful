@@ -5,9 +5,6 @@ import XCTest
 class Tests: XCTestCase {
   override func setUp() {
     super.setUp()
-    JCRequestErrorTestCase().invokeTest()
-    JCRequestCenterTestCase().invokeTest()
-    JCRequestUtilityTestCase().invokeTest()
   }
 
   override func tearDown() {
@@ -16,7 +13,13 @@ class Tests: XCTestCase {
   }
 
   func testExample() {
-    // This is an example of a functional test case.
+    JCRequestErrorTestCase().invokeTest()
+    JCRequestCenterTestCase().invokeTest()
+    JCRequestUtilityTestCase().invokeTest()
+    JCLocalPersistentTestCase().invokeTest()
+    JCSerializationTestCase().invokeTest()
+    JCBundleFileLoaderTestCase().invokeTest()
+    JCRestfulObjectTestCase().invokeTest()
     XCTAssert(true, "Pass")
   }
 

@@ -10,6 +10,12 @@ import JCSwiftCommon
 import XCTest
 
 class JCSerializationTestCase: XCTestCase {
+  override func invokeTest() {
+    testABugFromXcodeOrSwiftOrSomethingElseICannotSure()
+    testObjectToDict()
+    testCodable()
+  }
+
   func testABugFromXcodeOrSwiftOrSomethingElseICannotSure() {
     let result: Any? = nil
     var value: Any

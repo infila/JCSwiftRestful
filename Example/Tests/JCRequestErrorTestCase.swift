@@ -11,6 +11,10 @@ import JCSwiftRestful
 import XCTest
 
 class JCRequestErrorTestCase: XCTestCase {
+  override func invokeTest() {
+    testExample()
+  }
+
   func testExample() {
     let serverErrorString1 = "{\"errorCode\":9999,\"reason\":\"45678\"}"
     let error1 = JCSerialization.decode(from: serverErrorString1.data(using: .utf8)!, decodeType: JCRequestError.self)

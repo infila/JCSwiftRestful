@@ -7,6 +7,7 @@
 //
 
 import JCSwiftRestful
+import JCSwiftUIWedgets
 import SwiftUI
 
 @main
@@ -40,5 +41,9 @@ struct DemoApp: App {
       return result
     }
     JCRequestCenter.shared.specialHandler = [(condition, handler)]
+  }
+
+  func configureUIStyle() {
+    JCRetryViewAppearance.shared.retryButtonStyle = AnyButtonStyle(JCButtonStyle.GradientBackground(width: 20, height: 20, colors: [JCColorPair(normal: .blue, highlight: .white)]))
   }
 }

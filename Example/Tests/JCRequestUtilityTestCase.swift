@@ -9,6 +9,10 @@
 import XCTest
 
 class JCRequestUtilityTestCase: XCTestCase {
+    override func invokeTest() {
+      testExample()
+    }
+    
   func testExample() {
   }
 }

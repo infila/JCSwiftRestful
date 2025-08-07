@@ -10,6 +10,10 @@ import UIKit
 import XCTest
 
 class JCRequestCenterTestCase: XCTestCase {
+    override func invokeTest() {
+      testExample()
+    }
+    
     func testExample() {
     }
 }

@@ -10,6 +10,10 @@ import JCSwiftCommon
 import XCTest
 
 class JCBundleFileLoaderTestCase: XCTestCase {
+    override func invokeTest() {
+      testExample()
+    }
+    
   func testExample() {
     let people = JCBundleFileLoader.loadJsonFile(from: "PersonDemo.json", decodeType: [Person].self)
     XCTAssert(people?.count == 2)
