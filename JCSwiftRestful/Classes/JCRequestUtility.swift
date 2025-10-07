@@ -14,6 +14,12 @@ struct JCRequestUtility {
     guard let obj = obj else {
       return nil
     }
+    if let obj = obj as? String {
+      return obj.data(using: .utf8)
+    }
+    if let obj = obj as? Data {
+      return obj
+    }
     return JCSerialization.encode(obj)
   }
 
