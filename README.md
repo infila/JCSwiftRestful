@@ -77,13 +77,29 @@ In Xcode, select **File > Add Package Dependencies** and enter:
 https://github.com/infila/JCSwiftRestful.git
 ```
 
-Select version `1.1.0` or later. Swift Package Manager resolves `JCSwiftCommon` automatically, then:
+Choose **Up to Next Major Version** starting at `1.1.0` and add the `JCSwiftRestful` product to your app target. Swift Package Manager resolves `JCSwiftCommon` automatically, then:
 
 ```swift
 import JCSwiftRestful
 ```
 
-### CocoaPods
+For a `Package.swift` manifest:
+
+```swift
+dependencies: [
+  .package(url: "https://github.com/infila/JCSwiftRestful.git", from: "1.1.0")
+]
+```
+
+Add the product to the dependencies of the target that imports it:
+
+```swift
+.product(name: "JCSwiftRestful", package: "JCSwiftRestful")
+```
+
+You do not need to declare `JCSwiftCommon` separately unless your own target imports it directly. Release tags follow [Semantic Versioning](https://semver.org/). Swift Package Manager is the primary distribution channel.
+
+### CocoaPods (legacy)
 
 CocoaPods Trunk currently contains version `1.0.5`:
 
