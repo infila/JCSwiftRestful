@@ -1,94 +1,71 @@
 # JCSwiftRestful
 
-[![CI Status](https://img.shields.io/travis/James/JCSwiftRestful.svg?style=flat)](https://travis-ci.org/James/JCSwiftRestful)
-[![Version](https://img.shields.io/cocoapods/v/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
-[![License](https://img.shields.io/cocoapods/l/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
-[![Platform](https://img.shields.io/cocoapods/p/JCSwiftRestful.svg?style=flat)](https://cocoapods.org/pods/JCSwiftRestful)
+[![Release](https://img.shields.io/github/v/tag/infila/JCSwiftRestful?label=release)](https://github.com/infila/JCSwiftRestful/tags)
+![iOS](https://img.shields.io/badge/iOS-13%2B-blue)
+![Swift](https://img.shields.io/badge/Swift-5.7%2B-orange)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-## Introduction
+An async/await REST client that maps `Codable` request and response types. It depends on [JCSwiftCommon](https://github.com/infila/JCSwiftCommon).
 
-Here are three frameworks for junior developers. They can help you increase development efficiency and write more standardized, maintainable code.:
-
-[JCSwiftCommon](https://github.com/infila/JCSwiftCommon): for extensions, some common function, and a lightweight local storage tool based on file system IO.
-
-[JCSwiftRestful](https://github.com/infila/JCSwiftRestful): for Restful APIs. It helps you focus more on handling object-oriented and structured data. To use this framework, you will have to write code using more standard RESTful semantics, both on iOS and server sides. Otherwise, the automatic serialization and deserialization functions within this framework will not work.
-
-[JCSwiftUIWidgets](https://github.com/infila/JCSwiftUIWidgets): contains some custom components. Since many native SwiftUI methods do not support iOS 13 or 14, I have written some components to support these versions. And all components support "theme mode", which meaning you only need to modify one config, and the appearance will change everywhere.
+Related package: [JCSwiftUIWidgets](https://github.com/infila/JCSwiftUIWidgets).
 
 ## Example
 
-<!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-**3 steps to get results from a RESTful API:**
- 
-*Step 1: Have a default implementation for JCRequestData, which is a protocol
- ```ruby
- extension JCRequestData {
-  var method: JCHttpMethod {
-    return .get
-  }
+Provide shared defaults for requests:
 
-  var parameter: Codable? {
-    return nil
-  }
-
+```swift
+extension JCRequestData {
+  var method: JCHttpMethod { .get }
+  var parameter: Codable? { nil }
   var header: [String: String] {
-    var header = [String: String]()
-    header["Accept"] = "application/json, text/plain, */*"
-    header["Accept-Language"] = "en-US,en;q=0.9"
-    header["Content-Type"] = "application/json"
-    header["source"] = "iOS"
-//    if let token = UserManager.shared.userToken, token.count != 0 {
-//      header["Authorization"] = "userToken"
-//    }
-    return header
+    ["Accept": "application/json"]
   }
 }
 ```
-*Step 2: Looking at the json string in response and translate to a Swift Struct/Class
-```ruby
-$ curl http://ip.jsontest.com
-{"ip": "24.84.236.255"}
-```
 
-Translate to (Here I name it as IpTestRequestData, and it's' response only have one property is "ip" as a String):
-```ruby
-private struct IpTestRequestData: JCRequestData {
+Model the response and endpoint. For example, a response such as `{"ip":"203.0.113.10"}` can be represented by:
+
+```swift
+struct IPRequest: JCRequestData {
   struct Response: Codable {
-    var ip: String
+    let ip: String
   }
 
-  var apiPath: String {
-    "http://ip.jsontest.com"
-  }
+  var apiPath: String { "/ip" }
 }
 ```
 
-*Step 3: Send request and get result
-```ruby
+Configure the server URL and send the request:
+
+```swift
+JCRequestCenter.shared.domainUrl = "https://api.example.com"
+
 Task {
-    let result = try? await JCRequestCenter.shared.sendRequest(IpTestRequestData(), decodeType: IpTestRequestData.Response.self)
-    print(result?.ip ?? "Error")
+  do {
+    let response = try await JCRequestCenter.shared.sendRequest(
+      IPRequest(),
+      decodeType: IPRequest.Response.self
+    )
+    print(response.ip)
+  } catch {
+    print(error)
+  }
 }
 ```
 
+The example domain is illustrative; replace it with your own HTTPS API.
+
+## Response handling
+
+- Successful `200...299` responses are decoded directly into the requested `Codable` type.
+- Other HTTP responses are decoded as `JCRequestError` when possible.
+- Client validation and authorization errors should use appropriate `4xx` status codes; server failures should use `5xx` codes.
+- The domain URL, timeout, cache policy, logging, success status range, encryption, and error handling can be customized on `JCRequestCenter.shared`.
 
 ## Requirements
 
-iOS Deployment Target >= 13.0 
-
-To use JCSwiftRestful, the HTTP response **MUST** adhere to standard RESTful formats. Which means: when the status code is 200, the responseData must follow a single data format, and 5XX codes should be used to indicate parameter errors or other issues. [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 
-
-For example, if an API returns like:
-```ruby
-{statusCode: 200, responseData: [Person]}
-```
-And in any other cases with different parameters sent from client, this API **SHOULD NOT** returns like:
-```ruby
-{statusCode: 200, responseData: Person}
-
-{statusCode: 200, responseData: { errorMsg: "Parameter is incorrect" }}
-```
-
+- iOS 13 or later
+- Xcode 14 or later
 
 ## Installation
 
@@ -100,24 +77,33 @@ In Xcode, select **File > Add Package Dependencies** and enter:
 https://github.com/infila/JCSwiftRestful.git
 ```
 
-Use version `1.1.0` or later. Swift Package Manager resolves `JCSwiftCommon`
-automatically; import the library with `import JCSwiftRestful`.
+Select version `1.1.0` or later. Swift Package Manager resolves `JCSwiftCommon` automatically, then:
+
+```swift
+import JCSwiftRestful
+```
 
 ### CocoaPods
 
-JCSwiftRestful is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+CocoaPods Trunk currently contains version `1.0.5`:
 
 ```ruby
-pod 'JCSwiftRestful'
+pod 'JCSwiftRestful', '~> 1.0.5'
 ```
 
-## Author
+To use the current Git releases, declare both dependencies explicitly:
 
-James, infilachen@gmail.com, [LinkedIn](https://www.linkedin.com/in/jameschen5428)
+```ruby
+pod 'JCSwiftCommon', :git => 'https://github.com/infila/JCSwiftCommon.git', :tag => '1.1.0'
+pod 'JCSwiftRestful', :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '1.1.0'
+```
 
-Fanny, fanfan.feng9@gmail.com
+## Authors
+
+James Chen — infilachen@gmail.com — [LinkedIn](https://www.linkedin.com/in/jameschen5428)
+
+Fanny Feng — fanfan.feng9@gmail.com
 
 ## License
 
-JCSwiftRestful is available under the MIT license. See the LICENSE file for more info.
+JCSwiftRestful is available under the MIT license. See [LICENSE](LICENSE).
