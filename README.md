@@ -92,6 +92,19 @@ And in any other cases with different parameters sent from client, this API **SH
 
 ## Installation
 
+### Swift Package Manager
+
+In Xcode, select **File > Add Package Dependencies** and enter:
+
+```text
+https://github.com/infila/JCSwiftRestful.git
+```
+
+Use version `1.1.0` or later. Swift Package Manager resolves `JCSwiftCommon`
+automatically; import the library with `import JCSwiftRestful`.
+
+### CocoaPods
+
 JCSwiftRestful is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
