@@ -7,7 +7,7 @@
 //
 
 import JCSwiftRestful
-import JCSwiftUIWedgets
+import JCSwiftUIWidgets
 import SwiftUI
 
 @main

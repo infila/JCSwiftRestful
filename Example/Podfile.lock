@@ -1,41 +1,41 @@
 PODS:
-  - JCSwiftCommon (1.0.0):
-    - JCSwiftCommon/Common (= 1.0.0)
-    - "JCSwiftCommon/Foundation+Ext (= 1.0.0)"
-  - JCSwiftCommon/Common (1.0.0):
+  - JCSwiftCommon (1.0.3):
+    - JCSwiftCommon/Common (= 1.0.3)
+    - "JCSwiftCommon/Foundation+Ext (= 1.0.3)"
+  - JCSwiftCommon/Common (1.0.3):
     - "JCSwiftCommon/Foundation+Ext"
-  - "JCSwiftCommon/Foundation+Ext (1.0.0)"
-  - JCSwiftRestful (1.0.0):
+  - "JCSwiftCommon/Foundation+Ext (1.0.3)"
+  - JCSwiftRestful (1.0.5):
     - JCSwiftCommon
-  - JCSwiftUIWedgets (1.0.1):
-    - JCSwiftUIWedgets/Configure (= 1.0.1)
-    - "JCSwiftUIWedgets/SwiftUI+Ext (= 1.0.1)"
-    - JCSwiftUIWedgets/Wedgets (= 1.0.1)
-  - JCSwiftUIWedgets/Configure (1.0.1):
-    - "JCSwiftUIWedgets/SwiftUI+Ext"
-  - "JCSwiftUIWedgets/SwiftUI+Ext (1.0.1)"
-  - JCSwiftUIWedgets/Wedgets (1.0.1):
-    - JCSwiftUIWedgets/Configure
-    - "JCSwiftUIWedgets/SwiftUI+Ext"
+  - JCSwiftUIWidgets (2.0.0):
+    - JCSwiftUIWidgets/Configure (= 2.0.0)
+    - "JCSwiftUIWidgets/SwiftUI+Ext (= 2.0.0)"
+    - JCSwiftUIWidgets/Widgets (= 2.0.0)
+  - JCSwiftUIWidgets/Configure (2.0.0):
+    - "JCSwiftUIWidgets/SwiftUI+Ext"
+  - "JCSwiftUIWidgets/SwiftUI+Ext (2.0.0)"
+  - JCSwiftUIWidgets/Widgets (2.0.0):
+    - JCSwiftUIWidgets/Configure
+    - "JCSwiftUIWidgets/SwiftUI+Ext"
 
 DEPENDENCIES:
   - JCSwiftCommon (from `../../JCSwiftCommon`)
   - JCSwiftRestful (from `../`)
-  - JCSwiftUIWedgets (from `../../JCSwiftUIWedgets`)
+  - JCSwiftUIWidgets (from `../../JCSwiftUIWidgets`)
 
 EXTERNAL SOURCES:
   JCSwiftCommon:
     :path: "../../JCSwiftCommon"
   JCSwiftRestful:
     :path: "../"
-  JCSwiftUIWedgets:
-    :path: "../../JCSwiftUIWedgets"
+  JCSwiftUIWidgets:
+    :path: "../../JCSwiftUIWidgets"
 
 SPEC CHECKSUMS:
-  JCSwiftCommon: f079abcd366750aa887d3bb12a5d4136299bb655
-  JCSwiftRestful: e14f009df0759bb88660fe4a7af830a6693e4e4c
-  JCSwiftUIWedgets: 7242cc3ed6dc9479dc1169d268326f0a4a3c9ef5
+  JCSwiftCommon: 292929de45147e52702aecaece625fd051536d08
+  JCSwiftRestful: dc5ec08b732879d27b0941ed9e478e228f3887a6
+  JCSwiftUIWidgets: 57ed197d522877f30b760a467669cc6b6f9cd724
 
-PODFILE CHECKSUM: 77cc8b0b7e9eeea0509dd36245f945f7ae1143d1
+PODFILE CHECKSUM: 32163d6ed48b2becddc9fbfb2bdffbdfbff7e58c
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

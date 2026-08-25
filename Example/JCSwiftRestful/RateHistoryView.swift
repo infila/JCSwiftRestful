@@ -6,7 +6,7 @@
 //  Copyright © 2024 CocoaPods. All rights reserved.
 //
 
-import JCSwiftUIWedgets
+import JCSwiftUIWidgets
 import SwiftUI
 
 struct RateHistoryCell: View {

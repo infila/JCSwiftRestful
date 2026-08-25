@@ -8,7 +8,7 @@
 
 import JCSwiftCommon
 import JCSwiftRestful
-import JCSwiftUIWedgets
+import JCSwiftUIWidgets
 import SwiftUI
 
 struct ExchangeRateEntity: JCPersistentObject {

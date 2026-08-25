@@ -355,13 +355,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-JCSwiftRestful_Example/Pods-JCSwiftRestful_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JCSwiftCommon/JCSwiftCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/JCSwiftRestful/JCSwiftRestful.framework",
-				"${BUILT_PRODUCTS_DIR}/JCSwiftUIWedgets/JCSwiftUIWedgets.framework",
+				"${BUILT_PRODUCTS_DIR}/JCSwiftUIWidgets/JCSwiftUIWidgets.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCSwiftCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCSwiftRestful.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCSwiftUIWedgets.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCSwiftUIWidgets.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
