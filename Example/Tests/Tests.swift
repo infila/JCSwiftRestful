@@ -12,14 +12,16 @@ class Tests: XCTestCase {
     super.tearDown()
   }
 
-  func testExample() {
-    JCRequestErrorTestCase().invokeTest()
-    JCRequestCenterTestCase().invokeTest()
-    JCRequestUtilityTestCase().invokeTest()
-    JCLocalPersistentTestCase().invokeTest()
-    JCSerializationTestCase().invokeTest()
-    JCBundleFileLoaderTestCase().invokeTest()
-    JCRestfulObjectTestCase().invokeTest()
+  func testExample() throws {
+    JCRequestErrorTestCase().testExample()
+    JCRequestUtilityTestCase().testMissingBody()
+    JCRequestUtilityTestCase().testRawBodiesArePreserved()
+    try JCRequestUtilityTestCase().testCodableBodyIsJSON()
+    JCLocalPersistentTestCase().testExample()
+    JCSerializationTestCase().testObjectToDict()
+    JCSerializationTestCase().testCodable()
+    JCBundleFileLoaderTestCase().testExample()
+    JCRequestDataTestCase().testRequestValuesThroughProtocol()
     XCTAssert(true, "Pass")
   }
 

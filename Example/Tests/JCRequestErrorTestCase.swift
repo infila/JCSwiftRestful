@@ -3,7 +3,7 @@
 //  JCSwiftRestful_Tests
 //
 //  Created by James Chen on 2024-07-03.
-//  Copyright © 2024 CocoaPods. All rights reserved.
+//  Copyright © 2024 James Chen. All rights reserved.
 //
 
 import JCSwiftCommon
@@ -11,11 +11,16 @@ import JCSwiftRestful
 import XCTest
 
 class JCRequestErrorTestCase: XCTestCase {
-  override func invokeTest() {
-    testExample()
-  }
 
   func testExample() {
+    let originalCodeKey = JCRequestError.errorCodeNameKey
+    let originalReasonKey = JCRequestError.reasonNameKey
+    defer {
+      JCRequestError.errorCodeNameKey = originalCodeKey
+      JCRequestError.reasonNameKey = originalReasonKey
+    }
+    JCRequestError.errorCodeNameKey = "errorCode"
+    JCRequestError.reasonNameKey = "reason"
     let serverErrorString1 = "{\"errorCode\":9999,\"reason\":\"45678\"}"
     let error1 = JCSerialization.decode(from: serverErrorString1.data(using: .utf8)!, decodeType: JCRequestError.self)
     XCTAssert(error1?.errorCode == 9999)

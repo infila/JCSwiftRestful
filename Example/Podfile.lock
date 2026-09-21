@@ -1,20 +1,20 @@
 PODS:
-  - JCSwiftCommon (1.0.3):
-    - JCSwiftCommon/Common (= 1.0.3)
-    - "JCSwiftCommon/Foundation+Ext (= 1.0.3)"
-  - JCSwiftCommon/Common (1.0.3):
+  - JCSwiftCommon (2.0.0):
+    - JCSwiftCommon/Common (= 2.0.0)
+    - "JCSwiftCommon/Foundation+Ext (= 2.0.0)"
+  - JCSwiftCommon/Common (2.0.0):
     - "JCSwiftCommon/Foundation+Ext"
-  - "JCSwiftCommon/Foundation+Ext (1.0.3)"
-  - JCSwiftRestful (1.0.5):
-    - JCSwiftCommon
-  - JCSwiftUIWidgets (2.0.0):
-    - JCSwiftUIWidgets/Configure (= 2.0.0)
-    - "JCSwiftUIWidgets/SwiftUI+Ext (= 2.0.0)"
-    - JCSwiftUIWidgets/Widgets (= 2.0.0)
-  - JCSwiftUIWidgets/Configure (2.0.0):
+  - "JCSwiftCommon/Foundation+Ext (2.0.0)"
+  - JCSwiftRestful (2.0.0):
+    - JCSwiftCommon (~> 2.0)
+  - JCSwiftUIWidgets (2.1.0):
+    - JCSwiftUIWidgets/Configure (= 2.1.0)
+    - "JCSwiftUIWidgets/SwiftUI+Ext (= 2.1.0)"
+    - JCSwiftUIWidgets/Widgets (= 2.1.0)
+  - JCSwiftUIWidgets/Configure (2.1.0):
     - "JCSwiftUIWidgets/SwiftUI+Ext"
-  - "JCSwiftUIWidgets/SwiftUI+Ext (2.0.0)"
-  - JCSwiftUIWidgets/Widgets (2.0.0):
+  - "JCSwiftUIWidgets/SwiftUI+Ext (2.1.0)"
+  - JCSwiftUIWidgets/Widgets (2.1.0):
     - JCSwiftUIWidgets/Configure
     - "JCSwiftUIWidgets/SwiftUI+Ext"
 
@@ -32,10 +32,10 @@ EXTERNAL SOURCES:
     :path: "../../JCSwiftUIWidgets"
 
 SPEC CHECKSUMS:
-  JCSwiftCommon: 292929de45147e52702aecaece625fd051536d08
-  JCSwiftRestful: dc5ec08b732879d27b0941ed9e478e228f3887a6
-  JCSwiftUIWidgets: 57ed197d522877f30b760a467669cc6b6f9cd724
+  JCSwiftCommon: 6c041c1e30d410cc6cabb7675c9729a0a87f3c28
+  JCSwiftRestful: 265ad6e7b4a634f42181b721e21116dc64267350
+  JCSwiftUIWidgets: 64ceccccc075531223a2ab299d7ea0c10b592d1e
 
-PODFILE CHECKSUM: 32163d6ed48b2becddc9fbfb2bdffbdfbff7e58c
+PODFILE CHECKSUM: 58fc8d3f053e4fe06d2c89317cd7478b67c4189c
 
 COCOAPODS: 1.16.2

@@ -3,19 +3,17 @@
 //  JCSwiftRestful_Tests
 //
 //  Created by James Chen on 2024-07-05.
-//  Copyright © 2024 CocoaPods. All rights reserved.
+//  Copyright © 2024 James Chen. All rights reserved.
 //
 
 import JCSwiftCommon
 import XCTest
 
 class JCLocalPersistentTestCase: XCTestCase {
-    override func invokeTest() {
-      testExample()
-    }
-    
+
   func testExample() {
     Person.clear()
+    defer { Person.clear() }
     let allFileAmount = JCLocalPersistent.shared.allFileNames().count
     let person1 = Person(name: "A", age: 18)
     let person2 = Person(name: "B", age: 19)

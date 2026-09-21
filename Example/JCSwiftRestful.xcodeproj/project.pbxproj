@@ -12,7 +12,6 @@
 		607FACD61AFB9204008FA782 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* DemoApp.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F20696ED2C49C10C00F8BF8D /* JCRequestDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */; };
 		F22D3E3B2C542D1A00C00D3C /* JCRequestData+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3A2C542D1A00C00D3C /* JCRequestData+Default.swift */; };
 		F22D3E3D2C54681600C00D3C /* TestCurrencyRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D3E3C2C54681600C00D3C /* TestCurrencyRateView.swift */; };
@@ -28,7 +27,7 @@
 		F2C066362E171561004B58FF /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C066352E17155C004B58FF /* LoginManager.swift */; };
 		F2C066392E173EB3004B58FF /* CurrencyTestRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C066382E173EB2004B58FF /* CurrencyTestRequestData.swift */; };
 		F2C0663B2E173F22004B58FF /* GetUserInfoRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0663A2E173EE9004B58FF /* GetUserInfoRequestData.swift */; };
-		F2E50A612C35F49F0096572E /* JCRequestCenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */; };
+		F2D3C6BD3061BB5E00CECC3D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3C6BC3061BB5E00CECC3D /* Tests.swift */; };
 		F2E50A632C35F4CC0096572E /* JCRequestUtilityTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */; };
 		F2E50A652C35F4FB0096572E /* JCRequestErrorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */; };
 		F2E841972C4EE8700059EDF8 /* JCSerializationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */; };
@@ -59,7 +58,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JCSwiftRestful_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSwiftRestful_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		989F99CFA3CAB716BDE340D6 /* JCSwiftRestful.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCSwiftRestful.podspec; path = ../JCSwiftRestful.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EF86525268AE3B817389E8E2 /* Pods-JCSwiftRestful_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSwiftRestful_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JCSwiftRestful_Tests/Pods-JCSwiftRestful_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F20696EC2C49C10C00F8BF8D /* JCRequestDataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestDataTestCase.swift; sourceTree = "<group>"; };
@@ -75,7 +73,7 @@
 		F2C066352E17155C004B58FF /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		F2C066382E173EB2004B58FF /* CurrencyTestRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTestRequestData.swift; sourceTree = "<group>"; };
 		F2C0663A2E173EE9004B58FF /* GetUserInfoRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoRequestData.swift; sourceTree = "<group>"; };
-		F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestCenterTestCase.swift; sourceTree = "<group>"; };
+		F2D3C6BC3061BB5E00CECC3D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestUtilityTestCase.swift; sourceTree = "<group>"; };
 		F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestErrorTestCase.swift; sourceTree = "<group>"; };
 		F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSerializationTestCase.swift; sourceTree = "<group>"; };
@@ -155,9 +153,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				F2D3C6BC3061BB5E00CECC3D /* Tests.swift */,
 				F2E50A642C35F4FB0096572E /* JCRequestErrorTestCase.swift */,
-				F2E50A602C35F49F0096572E /* JCRequestCenterTestCase.swift */,
 				F2E50A622C35F4CC0096572E /* JCRequestUtilityTestCase.swift */,
 				F2A8ED722C38C81100A6660F /* JCLocalPersistentTestCase.swift */,
 				F2E841962C4EE8700059EDF8 /* JCSerializationTestCase.swift */,
@@ -291,7 +288,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 2700;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -436,9 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				F2E50A612C35F49F0096572E /* JCRequestCenterTestCase.swift in Sources */,
 				F257FBBE2C3CDC04002A62D7 /* JCBundleFileLoaderTestCase.swift in Sources */,
+				F2D3C6BD3061BB5E00CECC3D /* Tests.swift in Sources */,
 				F2A8ED732C38C81100A6660F /* JCLocalPersistentTestCase.swift in Sources */,
 				F2E841972C4EE8700059EDF8 /* JCSerializationTestCase.swift in Sources */,
 				F257FBC22C3CDC85002A62D7 /* Person.swift in Sources */,
@@ -520,10 +516,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -571,9 +568,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -590,7 +588,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = JCSwiftRestful/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,7 +612,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = JCSwiftRestful/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,7 +640,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +664,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

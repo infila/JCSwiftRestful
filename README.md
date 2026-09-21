@@ -77,7 +77,7 @@ In Xcode, select **File > Add Package Dependencies** and enter:
 https://github.com/infila/JCSwiftRestful.git
 ```
 
-Choose **Up to Next Major Version** starting at `1.1.0` and add the `JCSwiftRestful` product to your app target. Swift Package Manager resolves `JCSwiftCommon` automatically, then:
+Choose **Up to Next Major Version** starting at `2.0.0` and add the `JCSwiftRestful` product to your app target. Swift Package Manager resolves `JCSwiftCommon` automatically, then:
 
 ```swift
 import JCSwiftRestful
@@ -87,7 +87,7 @@ For a `Package.swift` manifest:
 
 ```swift
 dependencies: [
-  .package(url: "https://github.com/infila/JCSwiftRestful.git", from: "1.1.0")
+  .package(url: "https://github.com/infila/JCSwiftRestful.git", from: "2.0.0")
 ]
 ```
 
@@ -110,9 +110,35 @@ pod 'JCSwiftRestful', '~> 1.0.5'
 To use the current Git releases, declare both dependencies explicitly:
 
 ```ruby
-pod 'JCSwiftCommon', :git => 'https://github.com/infila/JCSwiftCommon.git', :tag => '1.1.0'
-pod 'JCSwiftRestful', :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '1.1.0'
+pod 'JCSwiftCommon', :git => 'https://github.com/infila/JCSwiftCommon.git', :tag => '2.0.0'
+pod 'JCSwiftRestful', :git => 'https://github.com/infila/JCSwiftRestful.git', :tag => '2.0.0'
 ```
+
+## Development
+
+`JCSwiftRestful/Classes` contains the library. `Example/JCSwiftRestful` contains the runnable SwiftUI demo, whose entry point is `DemoApp.swift`. The demo is not compiled into the Swift package library.
+
+### Library tests
+
+Run the core request, error decoding, and body encoding tests on macOS:
+
+```sh
+swift test
+```
+
+These tests do not start the demo or contact a live server. The example test target also retains the JCSwiftCommon integration tests, including the app-bundle resource test.
+
+### Run the demo
+
+Place `JCSwiftRestful`, `JCSwiftCommon`, and `JCSwiftUIWidgets` repositories in the same parent directory, then run:
+
+```sh
+cd Example
+pod install
+open JCSwiftRestful.xcworkspace
+```
+
+Select the `JCSwiftRestful-Example` scheme and an iOS simulator. The SwiftUI demo requires iOS 15 or later because of its JCSwiftUIWidgets dependency; the library continues to support iOS 13. Configure the demo's server and login settings for your environment before making requests.
 
 ## Authors
 

@@ -16,7 +16,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/infila/JCSwiftCommon.git",
-      from: "1.1.0"
+      from: "2.0.0"
     ),
   ],
   targets: [
@@ -29,6 +29,23 @@ let package = Package(
         ),
       ],
       path: "JCSwiftRestful/Classes"
+    ),
+    .testTarget(
+      name: "JCSwiftRestfulTests",
+      dependencies: [
+        "JCSwiftRestful",
+        .product(name: "JCSwiftCommon", package: "JCSwiftCommon"),
+      ],
+      path: "Example/Tests",
+      exclude: [
+        "Info.plist", "PersonDemo.json", "Person.swift", "Tests.swift",
+        "JCBundleFileLoaderTestCase.swift", "JCLocalPersistentTestCase.swift",
+        "JCSerializationTestCase.swift",
+      ],
+      sources: [
+        "JCRequestDataTestCase.swift", "JCRequestErrorTestCase.swift",
+        "JCRequestUtilityTestCase.swift",
+      ]
     ),
   ]
 )

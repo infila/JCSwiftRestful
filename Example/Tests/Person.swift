@@ -3,7 +3,7 @@
 //  JCSwiftRestful_Tests
 //
 //  Created by James Chen on 2024-07-08.
-//  Copyright © 2024 CocoaPods. All rights reserved.
+//  Copyright © 2024 James Chen. All rights reserved.
 //
 
 import Foundation

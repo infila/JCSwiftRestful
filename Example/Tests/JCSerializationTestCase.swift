@@ -3,36 +3,13 @@
 //  JCSwiftRestful_Tests
 //
 //  Created by James Chen on 2024-07-22.
-//  Copyright © 2024 CocoaPods. All rights reserved.
+//  Copyright © 2024 James Chen. All rights reserved.
 //
 
 import JCSwiftCommon
 import XCTest
 
 class JCSerializationTestCase: XCTestCase {
-  override func invokeTest() {
-    testABugFromXcodeOrSwiftOrSomethingElseICannotSure()
-    testObjectToDict()
-    testCodable()
-  }
-
-  func testABugFromXcodeOrSwiftOrSomethingElseICannotSure() {
-    let result: Any? = nil
-    var value: Any
-    value = result as Any
-
-    //    Option 1: Not work
-    //    let castedValue = value as? Optional<Any>
-    //    XCTAssert(castedValue == nil) // ----  Not Pass
-
-    //    Option 2: Works
-    if let castedValue = value as? Optional<Any> {
-      XCTAssert(value != nil) // Pass. But while you print it out, it's a nil......
-      XCTAssert(castedValue == nil) // Pass
-    } else {
-      XCTAssert(false)
-    }
-  }
 
   func testObjectToDict() {
     let person1 = Person(name: "A", age: 18)
